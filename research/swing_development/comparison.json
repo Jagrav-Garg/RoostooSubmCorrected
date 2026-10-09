@@ -1,0 +1,75 @@
+[
+  {
+    "name": "swing_24h",
+    "changes": {},
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -0.00020900919822956882,
+      "worst_return": -0.0018279616578896762,
+      "best_return": 0.0026079584385050314,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.15384615384615385,
+      "fraction_with_eight_provisional_active_days": 0.07692307692307693,
+      "total_trades": 23,
+      "win_rate": 0.391304347826087
+    }
+  },
+  {
+    "name": "swing_48h",
+    "changes": {
+      "max_hold_hours": 48
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -0.0007795673404756245,
+      "worst_return": -0.005725399361564354,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.07692307692307693,
+      "total_trades": 11,
+      "win_rate": 0.09090909090909091
+    }
+  },
+  {
+    "name": "swing_48h_balanced",
+    "changes": {
+      "max_hold_hours": 48,
+      "stop_atr": 2.4,
+      "target_atr": 1.6
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -0.00023107205753528732,
+      "worst_return": -0.0014817176792282227,
+      "best_return": 0.0009371201758630043,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.07692307692307693,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 9,
+      "win_rate": 0.4444444444444444
+    }
+  },
+  {
+    "name": "swing_48h_365d",
+    "changes": {
+      "max_hold_hours": 48,
+      "calibration_days": 365
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": 0.0,
+      "worst_return": 0.0,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 0,
+      "win_rate": null
+    }
+  }
+]

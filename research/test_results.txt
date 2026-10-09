@@ -1,0 +1,36 @@
+test_live_one_shot_is_rejected_before_exchange_access (test_critical_behavior.ApiTests.test_live_one_shot_is_rejected_before_exchange_access) ... ok
+test_missing_success_flag_is_an_unknown_write (test_critical_behavior.ApiTests.test_missing_success_flag_is_an_unknown_write) ... ok
+test_no_order_matched_is_empty_not_transport_failure (test_critical_behavior.ApiTests.test_no_order_matched_is_empty_not_transport_failure) ... ok
+test_official_signature_fixture (test_critical_behavior.ApiTests.test_official_signature_fixture) ... ok
+test_server_error_cannot_echo_credentials_into_logs (test_critical_behavior.ApiTests.test_server_error_cannot_echo_credentials_into_logs) ... ok
+test_short_open_sends_collateral_not_spot_sell (test_critical_behavior.ApiTests.test_short_open_sends_collateral_not_spot_sell) ... ok
+test_transport_timeout_does_not_resend_mutation (test_critical_behavior.ApiTests.test_transport_timeout_does_not_resend_mutation) ... ok
+test_acknowledged_order_survives_a_followup_read_failure (test_critical_behavior.RecoveryTests.test_acknowledged_order_survives_a_followup_read_failure) ... ok
+test_activity_report_does_not_claim_unspecified_daily_minimum (test_critical_behavior.RecoveryTests.test_activity_report_does_not_claim_unspecified_daily_minimum) ... ok
+test_ambiguous_multiple_history_matches_remain_paused (test_critical_behavior.RecoveryTests.test_ambiguous_multiple_history_matches_remain_paused) ... ok
+test_paper_transaction_failure_rolls_back_cash_and_positions (test_critical_behavior.RecoveryTests.test_paper_transaction_failure_rolls_back_cash_and_positions) ... ok
+test_short_equity_does_not_double_count_collateral (test_critical_behavior.RecoveryTests.test_short_equity_does_not_double_count_collateral) ... ok
+test_single_instance_lock_prevents_double_bots (test_critical_behavior.RecoveryTests.test_single_instance_lock_prevents_double_bots) ... ok
+test_unknown_write_recovers_net_coin_quantity_after_restart (test_critical_behavior.RecoveryTests.test_unknown_write_recovers_net_coin_quantity_after_restart) ... ok
+test_unverified_short_collateral_accounting_fails_closed (test_critical_behavior.RecoveryTests.test_unverified_short_collateral_accounting_fails_closed) ... ok
+test_both_barriers_in_one_candle_uses_stop (test_critical_behavior.ResearchTests.test_both_barriers_in_one_candle_uses_stop) ... ok
+test_fees_apply_to_both_notional_legs (test_critical_behavior.ResearchTests.test_fees_apply_to_both_notional_legs) ... ok
+test_high_win_rate_with_negative_expectancy_is_rejected (test_critical_behavior.ResearchTests.test_high_win_rate_with_negative_expectancy_is_rejected) ... ok
+test_prefix_label_results_match_live_history (test_critical_behavior.ResearchTests.test_prefix_label_results_match_live_history) ... ok
+test_stop_gap_uses_worse_open_not_stop_price (test_critical_behavior.ResearchTests.test_stop_gap_uses_worse_open_not_stop_price) ... ok
+test_supported_positive_edge_can_pass_the_gate (test_critical_behavior.ResearchTests.test_supported_positive_edge_can_pass_the_gate) ... ok
+test_unfinished_future_labels_are_excluded (test_critical_behavior.ResearchTests.test_unfinished_future_labels_are_excluded) ... ok
+test_daily_loss_and_total_drawdown_are_distinct (test_critical_behavior.RiskTests.test_daily_loss_and_total_drawdown_are_distinct) ... ok
+test_existing_pair_cannot_be_averaged_down (test_critical_behavior.RiskTests.test_existing_pair_cannot_be_averaged_down) ... ok
+test_marked_gross_and_correlated_caps (test_critical_behavior.RiskTests.test_marked_gross_and_correlated_caps) ... ok
+test_rounding_never_increases_quantity (test_critical_behavior.RiskTests.test_rounding_never_increases_quantity) ... ok
+test_sizing_respects_planned_loss_including_costs (test_critical_behavior.RiskTests.test_sizing_respects_planned_loss_including_costs) ... ok
+test_future_candles_cannot_change_past_features (test_critical_behavior.SignalAndDataTests.test_future_candles_cannot_change_past_features) ... ok
+test_gaps_are_not_forward_filled (test_critical_behavior.SignalAndDataTests.test_gaps_are_not_forward_filled) ... ok
+test_malformed_ohlc_is_rejected (test_critical_behavior.SignalAndDataTests.test_malformed_ohlc_is_rejected) ... ok
+test_microsecond_archive_timestamp_is_normalized (test_critical_behavior.SignalAndDataTests.test_microsecond_archive_timestamp_is_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.088s
+
+OK

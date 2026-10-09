@@ -7,3 +7,5 @@ data/
 research/raw/
 *.sqlite*
 *.lock
+tmp/
+*.egg-info/

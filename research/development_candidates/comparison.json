@@ -1,0 +1,136 @@
+[
+  {
+    "name": "baseline_short",
+    "changes": {},
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -0.00013043724448786193,
+      "worst_return": -0.000881355824498331,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "name": "s24_t16",
+    "changes": {
+      "stop_atr": 2.4,
+      "target_atr": 1.6
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": 0.0,
+      "worst_return": 0.0,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 0,
+      "win_rate": null
+    }
+  },
+  {
+    "name": "s24_t24",
+    "changes": {
+      "stop_atr": 2.4,
+      "target_atr": 2.4
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -0.00031896835134257107,
+      "worst_return": -0.0019979536636720585,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 9,
+      "win_rate": 0.2222222222222222
+    }
+  },
+  {
+    "name": "s16_t16",
+    "changes": {
+      "stop_atr": 1.6,
+      "target_atr": 1.6
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -0.0001814765619351233,
+      "worst_return": -0.0014778394806582718,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 2,
+      "win_rate": 0.0
+    }
+  },
+  {
+    "name": "s24_t16_h48",
+    "changes": {
+      "stop_atr": 2.4,
+      "target_atr": 1.6,
+      "max_hold_hours": 48
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": 0.0,
+      "worst_return": 0.0,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 0,
+      "win_rate": null
+    }
+  },
+  {
+    "name": "s24_t16_365d",
+    "changes": {
+      "stop_atr": 2.4,
+      "target_atr": 1.6,
+      "calibration_days": 365
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": 0.0,
+      "worst_return": 0.0,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 0,
+      "win_rate": null
+    }
+  },
+  {
+    "name": "s20_t12_365d_h48",
+    "changes": {
+      "stop_atr": 2.0,
+      "target_atr": 1.2,
+      "calibration_days": 365,
+      "max_hold_hours": 48
+    },
+    "aggregate": {
+      "episode_count": 13,
+      "median_return": 0.0,
+      "mean_return": -4.5675672983772705e-05,
+      "worst_return": -0.0005937837487890452,
+      "best_return": 0.0,
+      "fraction_over_one_percent": 0.0,
+      "fraction_positive": 0.0,
+      "fraction_with_eight_provisional_active_days": 0.0,
+      "total_trades": 1,
+      "win_rate": 0.0
+    }
+  }
+]

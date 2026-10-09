@@ -1,0 +1,2 @@
+pair,strategy,direction,entry_ts,exit_ts,entry,exit,notional,pnl,fees,reason,episode
+AAVE/USD,breakout,-1,1755338400000,1755406800000,291.97394,299.2436458473792,2205.4582023925,-59.37837487889805,4.465828950713185,stop,4

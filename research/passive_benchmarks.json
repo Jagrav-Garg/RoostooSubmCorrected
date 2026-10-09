@@ -1,0 +1,138 @@
+{
+  "note": "Passive opportunity-cost references at 50% allocation, net of configured execution costs. They do not satisfy the competition's activity requirement. No Sharpe/Sortino/Calmar optimization is inferred.",
+  "episodes": [
+    {
+      "start": "2026-01-01T00:00:00+00:00",
+      "end_exclusive": "2026-01-15T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.0514680424448628,
+      "half_equal_weight_crypto_half_cash": 0.07591289419040731
+    },
+    {
+      "start": "2026-01-15T00:00:00+00:00",
+      "end_exclusive": "2026-01-29T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.04088221937212768,
+      "half_equal_weight_crypto_half_cash": -0.064031384123337
+    },
+    {
+      "start": "2026-01-29T00:00:00+00:00",
+      "end_exclusive": "2026-02-12T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.12564862523240056,
+      "half_equal_weight_crypto_half_cash": -0.15636286789296086
+    },
+    {
+      "start": "2026-02-12T00:00:00+00:00",
+      "end_exclusive": "2026-02-26T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.00523656036695137,
+      "half_equal_weight_crypto_half_cash": 0.036316195915539015
+    },
+    {
+      "start": "2026-02-26T00:00:00+00:00",
+      "end_exclusive": "2026-03-12T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.014675768526143955,
+      "half_equal_weight_crypto_half_cash": -0.007037135762188449
+    },
+    {
+      "start": "2026-03-12T00:00:00+00:00",
+      "end_exclusive": "2026-03-26T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.006638319823120062,
+      "half_equal_weight_crypto_half_cash": 0.01084006679476035
+    },
+    {
+      "start": "2026-03-26T00:00:00+00:00",
+      "end_exclusive": "2026-04-09T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.0033641238113264822,
+      "half_equal_weight_crypto_half_cash": -0.03268605095793693
+    },
+    {
+      "start": "2026-04-09T00:00:00+00:00",
+      "end_exclusive": "2026-04-23T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.04841000137991294,
+      "half_equal_weight_crypto_half_cash": 0.024761015170741744
+    },
+    {
+      "start": "2026-04-23T00:00:00+00:00",
+      "end_exclusive": "2026-05-07T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.019364983427994746,
+      "half_equal_weight_crypto_half_cash": 0.011171429542857903
+    },
+    {
+      "start": "2026-05-07T00:00:00+00:00",
+      "end_exclusive": "2026-05-21T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.02536136808331027,
+      "half_equal_weight_crypto_half_cash": -0.01689967524775542
+    },
+    {
+      "start": "2026-05-21T00:00:00+00:00",
+      "end_exclusive": "2026-06-04T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.08778103362300059,
+      "half_equal_weight_crypto_half_cash": -0.0735463961186261
+    },
+    {
+      "start": "2026-06-04T00:00:00+00:00",
+      "end_exclusive": "2026-06-18T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.0013531160243529555,
+      "half_equal_weight_crypto_half_cash": -0.020265832764269142
+    },
+    {
+      "start": "2026-06-18T00:00:00+00:00",
+      "end_exclusive": "2026-07-02T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.03619524758403812,
+      "half_equal_weight_crypto_half_cash": -0.01993943746912399
+    },
+    {
+      "start": "2026-07-02T00:00:00+00:00",
+      "end_exclusive": "2026-07-16T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.03784186763525478,
+      "half_equal_weight_crypto_half_cash": 0.03889142006027528
+    },
+    {
+      "start": "2026-07-16T00:00:00+00:00",
+      "end_exclusive": "2026-07-30T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.0074481495195849205,
+      "half_equal_weight_crypto_half_cash": -0.014399264277210288
+    },
+    {
+      "start": "2026-07-30T00:00:00+00:00",
+      "end_exclusive": "2026-08-13T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.005432185756856852,
+      "half_equal_weight_crypto_half_cash": -0.005194777497586568
+    },
+    {
+      "start": "2026-08-13T00:00:00+00:00",
+      "end_exclusive": "2026-08-27T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.12068646345397038,
+      "half_equal_weight_crypto_half_cash": 0.13398333354303577
+    },
+    {
+      "start": "2026-08-27T00:00:00+00:00",
+      "end_exclusive": "2026-09-10T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": -0.006028815445074916,
+      "half_equal_weight_crypto_half_cash": 0.00276846255290207
+    },
+    {
+      "start": "2026-09-10T00:00:00+00:00",
+      "end_exclusive": "2026-09-24T00:00:00+00:00",
+      "cash": 0.0,
+      "half_btc_half_cash": 0.03731618784775055,
+      "half_equal_weight_crypto_half_cash": 0.06381261916512201
+    }
+  ]
+}

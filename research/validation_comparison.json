@@ -1,0 +1,67 @@
+[
+  {
+    "name": "default_holdout",
+    "episode_count": 19,
+    "median_return": 0.0,
+    "mean_return": 0.0,
+    "worst_return": 0.0,
+    "best_return": 0.0,
+    "fraction_over_one_percent": 0.0,
+    "fraction_positive": 0.0,
+    "fraction_with_eight_provisional_active_days": 0.0,
+    "total_trades": 0,
+    "win_rate": null
+  },
+  {
+    "name": "default_cost_150",
+    "episode_count": 19,
+    "median_return": 0.0,
+    "mean_return": 0.0,
+    "worst_return": 0.0,
+    "best_return": 0.0,
+    "fraction_over_one_percent": 0.0,
+    "fraction_positive": 0.0,
+    "fraction_with_eight_provisional_active_days": 0.0,
+    "total_trades": 0,
+    "win_rate": null
+  },
+  {
+    "name": "default_cost_200",
+    "episode_count": 19,
+    "median_return": 0.0,
+    "mean_return": 0.0,
+    "worst_return": 0.0,
+    "best_return": 0.0,
+    "fraction_over_one_percent": 0.0,
+    "fraction_positive": 0.0,
+    "fraction_with_eight_provisional_active_days": 0.0,
+    "total_trades": 0,
+    "win_rate": null
+  },
+  {
+    "name": "short_optional_holdout",
+    "episode_count": 19,
+    "median_return": 0.0,
+    "mean_return": -0.00010295567527919911,
+    "worst_return": -0.0013586347842017288,
+    "best_return": 0.0,
+    "fraction_over_one_percent": 0.0,
+    "fraction_positive": 0.0,
+    "fraction_with_eight_provisional_active_days": 0.0,
+    "total_trades": 4,
+    "win_rate": 0.25
+  },
+  {
+    "name": "swing_optional_holdout",
+    "episode_count": 19,
+    "median_return": 0.0,
+    "mean_return": -0.000248517362194994,
+    "worst_return": -0.006217631828693393,
+    "best_return": 0.0010363842756599961,
+    "fraction_over_one_percent": 0.0,
+    "fraction_positive": 0.10526315789473684,
+    "fraction_with_eight_provisional_active_days": 0.10526315789473684,
+    "total_trades": 24,
+    "win_rate": 0.375
+  }
+]

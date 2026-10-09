@@ -1,0 +1,361 @@
+{
+  "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+  "start": "2025-07-01",
+  "end_exclusive": "2026-01-01",
+  "episode_days": 14,
+  "episodes": [
+    {
+      "return": 0.0,
+      "max_drawdown": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "provisional_active_days": 0,
+      "filled_orders_by_hkt_day": {},
+      "sharpe_daily_annualized": null,
+      "sortino_daily_annualized": null,
+      "calmar_annualized": null,
+      "fees": 0,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-07-01T00:00:00+00:00",
+      "end_utc": "2025-07-15T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 273
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.0026079584385050314,
+      "max_drawdown": -0.001614926928832694,
+      "closed_trades": 5,
+      "win_rate": 0.6,
+      "profit_factor": 2.9009512086642264,
+      "provisional_active_days": 9,
+      "filled_orders_by_hkt_day": {
+        "2025-07-19": 1,
+        "2025-07-20": 1,
+        "2025-07-22": 1,
+        "2025-07-23": 1,
+        "2025-07-24": 1,
+        "2025-07-25": 1,
+        "2025-07-27": 1,
+        "2025-07-28": 2,
+        "2025-07-29": 1
+      },
+      "sharpe_daily_annualized": 5.222028818321033,
+      "sortino_daily_annualized": 18.545835723355815,
+      "calmar_annualized": 43.50865673388798,
+      "fees": 40.06187502373931,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-07-15T00:00:00+00:00",
+      "end_utc": "2025-07-29T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 146,
+        "already_exposed_to_pair": 5
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": -0.0014821104194163714,
+      "max_drawdown": -0.0014821104194163714,
+      "closed_trades": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "provisional_active_days": 2,
+      "filled_orders_by_hkt_day": {
+        "2025-07-29": 1,
+        "2025-07-30": 1
+      },
+      "sharpe_daily_annualized": -5.106018857331861,
+      "sortino_daily_annualized": -5.106018857331861,
+      "calmar_annualized": -25.592750862600983,
+      "fees": 6.164519317834433,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-07-29T00:00:00+00:00",
+      "end_utc": "2025-08-12T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 240,
+        "already_exposed_to_pair": 1
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": -0.001475990457656562,
+      "max_drawdown": -0.0022750677695830834,
+      "closed_trades": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "provisional_active_days": 1,
+      "filled_orders_by_hkt_day": {
+        "2025-08-14": 2
+      },
+      "sharpe_daily_annualized": -5.106018857331862,
+      "sortino_daily_annualized": -5.106018857331861,
+      "calmar_annualized": -16.605017038974303,
+      "fees": 8.635321169062617,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-08-12T00:00:00+00:00",
+      "end_utc": "2025-08-26T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 179,
+        "already_exposed_to_pair": 2
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.0,
+      "max_drawdown": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "provisional_active_days": 0,
+      "filled_orders_by_hkt_day": {},
+      "sharpe_daily_annualized": null,
+      "sortino_daily_annualized": null,
+      "calmar_annualized": null,
+      "fees": 0,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-08-26T00:00:00+00:00",
+      "end_utc": "2025-09-09T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 140
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": -0.0010280547399815765,
+      "max_drawdown": -0.0014662209518965241,
+      "closed_trades": 2,
+      "win_rate": 0.5,
+      "profit_factor": 0.2991480470740316,
+      "provisional_active_days": 3,
+      "filled_orders_by_hkt_day": {
+        "2025-09-11": 1,
+        "2025-09-12": 1,
+        "2025-09-15": 2
+      },
+      "sharpe_daily_annualized": -3.4292200584861043,
+      "sortino_daily_annualized": -3.578056040931537,
+      "calmar_annualized": -18.046576857858454,
+      "fees": 25.088044499412703,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-09-09T00:00:00+00:00",
+      "end_utc": "2025-09-23T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 240,
+        "already_exposed_to_pair": 3
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.0,
+      "max_drawdown": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "provisional_active_days": 0,
+      "filled_orders_by_hkt_day": {},
+      "sharpe_daily_annualized": null,
+      "sortino_daily_annualized": null,
+      "calmar_annualized": null,
+      "fees": 0,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-09-23T00:00:00+00:00",
+      "end_utc": "2025-10-07T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 278,
+        "insufficient_history": 5
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.0,
+      "max_drawdown": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "provisional_active_days": 0,
+      "filled_orders_by_hkt_day": {},
+      "sharpe_daily_annualized": null,
+      "sortino_daily_annualized": null,
+      "calmar_annualized": null,
+      "fees": 0,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-10-07T00:00:00+00:00",
+      "end_utc": "2025-10-21T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 151,
+        "insufficient_history": 39
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.001382692802388119,
+      "max_drawdown": -0.002826827976282531,
+      "closed_trades": 5,
+      "win_rate": 0.4,
+      "profit_factor": 1.5909899662966476,
+      "provisional_active_days": 3,
+      "filled_orders_by_hkt_day": {
+        "2025-10-27": 5,
+        "2025-10-28": 2,
+        "2025-10-29": 3
+      },
+      "sharpe_daily_annualized": 1.8314834518119507,
+      "sortino_daily_annualized": 4.8178765613072665,
+      "calmar_annualized": 12.975886658556313,
+      "fees": 45.25825043557634,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-10-21T00:00:00+00:00",
+      "end_utc": "2025-11-04T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 198,
+        "insufficient_history": 16,
+        "already_exposed_to_pair": 5
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": -0.0018279616578896762,
+      "max_drawdown": -0.0025675996752450025,
+      "closed_trades": 7,
+      "win_rate": 0.42857142857142855,
+      "profit_factor": 0.4260093139439856,
+      "provisional_active_days": 7,
+      "filled_orders_by_hkt_day": {
+        "2025-11-11": 1,
+        "2025-11-12": 1,
+        "2025-11-14": 1,
+        "2025-11-15": 3,
+        "2025-11-16": 3,
+        "2025-11-17": 3,
+        "2025-11-18": 2
+      },
+      "sharpe_daily_annualized": -4.440797985181013,
+      "sortino_daily_annualized": -4.928129026740378,
+      "calmar_annualized": -18.14198618616042,
+      "fees": 33.337177878269735,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-11-04T00:00:00+00:00",
+      "end_utc": "2025-11-18T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 240,
+        "already_exposed_to_pair": 13
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": -0.0008936535429333592,
+      "max_drawdown": -0.0012847605746582058,
+      "closed_trades": 2,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "provisional_active_days": 4,
+      "filled_orders_by_hkt_day": {
+        "2025-11-27": 1,
+        "2025-11-28": 1,
+        "2025-11-29": 1,
+        "2025-11-30": 1
+      },
+      "sharpe_daily_annualized": -4.356604669970468,
+      "sortino_daily_annualized": -5.1365782469975505,
+      "calmar_annualized": -17.93305292610482,
+      "fees": 15.469338604488987,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-11-18T00:00:00+00:00",
+      "end_utc": "2025-12-02T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 221,
+        "already_exposed_to_pair": 4
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.0,
+      "max_drawdown": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "provisional_active_days": 0,
+      "filled_orders_by_hkt_day": {},
+      "sharpe_daily_annualized": null,
+      "sortino_daily_annualized": null,
+      "calmar_annualized": null,
+      "fees": 0,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-12-02T00:00:00+00:00",
+      "end_utc": "2025-12-16T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 200
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    },
+    {
+      "return": 0.0,
+      "max_drawdown": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "provisional_active_days": 0,
+      "filled_orders_by_hkt_day": {},
+      "sharpe_daily_annualized": null,
+      "sortino_daily_annualized": null,
+      "calmar_annualized": null,
+      "fees": 0,
+      "notes": "Synthetic market fills on actual Binance candles. Active-day count uses a provisional daily minimum; not confirmed compliance. Short-period annualized ratios are unstable.",
+      "start_utc": "2025-12-16T00:00:00+00:00",
+      "end_utc": "2025-12-30T00:00:00+00:00",
+      "terminal_halt": null,
+      "rejected_signals": {
+        "weak_net_edge_or_hit_rate": 165
+      },
+      "config_hash": "8faebaae00e795a07a71fe21f3a3da2c6f1ef8769a6d4510cf64df184b870854",
+      "require_evidence": true
+    }
+  ],
+  "aggregate": {
+    "episode_count": 13,
+    "median_return": 0.0,
+    "mean_return": -0.00020900919822956882,
+    "worst_return": -0.0018279616578896762,
+    "best_return": 0.0026079584385050314,
+    "fraction_over_one_percent": 0.0,
+    "fraction_positive": 0.15384615384615385,
+    "fraction_with_eight_provisional_active_days": 0.07692307692307693,
+    "total_trades": 23,
+    "win_rate": 0.391304347826087
+  },
+  "assumptions": {
+    "fee_per_side": 0.001,
+    "friction_bps_per_side": 5.0,
+    "calibration": "UTC-day frozen; only already-completed labels",
+    "data": "Binance hourly USDT spot proxy, not historical Roostoo executions",
+    "intrabar": "stop before target; gap losses at opening price; 60-second live stop latency not reproduced",
+    "selection_bias": "current liquid-coin whitelist; historical survivorship and researcher selection remain",
+    "no_evidence_mode": false
+  }
+}
