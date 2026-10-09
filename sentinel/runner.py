@@ -24,7 +24,8 @@ from .state import Store
 def code_version() -> str:
     try:
         r = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True, timeout=2, check=True)
-        return r.stdout.strip()
+        status = subprocess.run(["git", "status", "--porcelain", "--untracked-files=normal"], capture_output=True, text=True, timeout=2, check=True)
+        return r.stdout.strip() + ("+dirty" if status.stdout.strip() else "")
     except (OSError, subprocess.SubprocessError):
         return "uncommitted-package"
 

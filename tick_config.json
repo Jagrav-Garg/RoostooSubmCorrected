@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    "PEPE/USD"
+  ],
+  "maker_fee": 0.0005,
+  "taker_fee": 0.001,
+  "min_cycle_net_bps": 6.0,
+  "target_ticks": 1,
+  "entry_behind_bid_ticks": 1,
+  "stop_ticks": 3,
+  "entry_ttl_seconds": 300,
+  "max_hold_seconds": 1800,
+  "cooldown_seconds": 180,
+  "min_entry_interval_seconds": 300,
+  "poll_seconds": 30,
+  "max_cycles_per_day": 24,
+  "allocation_cap": 0.15,
+  "planned_risk": 0.0015,
+  "daily_loss": 0.0075,
+  "max_drawdown": 0.025,
+  "min_daily_volume": 2000000.0,
+  "minimum_notional": 10.0,
+  "shadow_initial_cash": 100000.0,
+  "shadow_fill_reference": "quotes",
+  "probe_notional": 100.0,
+  "probe_cycles": 20,
+  "probe_min_win_rate": 0.8,
+  "runtime_dir": "runtime",
+  "competition_start": "2026-10-04T00:00:00+08:00",
+  "competition_end": "2026-10-18T00:00:00+08:00",
+  "tick_permission_basis": "User clarification: sequential tick scalping is permitted."
+}

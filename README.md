@@ -2,9 +2,28 @@
 
 A selective, cost-aware trading research package and Roostoo execution bot for the October 2026 competition. Original implementation; the supplied GitHub repository was studied for architecture, not copied.
 
-**Status: paper-first research candidate. Historical testing has not demonstrated a reliable 1% return or the required trading activity. Do not describe this configuration as a validated winning strategy.** The default deliberately refuses signals without sufficient historical evidence. This produced no trades in the 2026 retrospective evaluation. Correct execution software is separate from evidence of a profitable strategy.
+**Status: research candidate with a new, fill-sensitive PEPE limit strategy.** The tick hypothesis produced positive simulated returns under touch fills, but failed trade-through stress. Actual Roostoo matching remains unverified. Read [TICK_STRATEGY_RESEARCH.md](TICK_STRATEGY_RESEARCH.md) first. The original hourly configuration remains separate and did not establish profitability or activity compliance.
 
 Read [STRATEGY_RESEARCH.md](STRATEGY_RESEARCH.md) for evidence, results, applicable rules, unresolved details and instrument selection.
+
+## New sequential tick candidate
+
+The user clarified that sequential tick scalping is permitted. `tick_config.json` enables PEPE only, buys one tick below the actual bid, then submits a fee-aware sell limit above the filled entry. It uses one position and one resting order, starts at $100 per entry, and scales only after at least twenty positive-economics observations on that account. The research report explains the difference between trade-price simulations and executable quote matching. Shadow observations never count as real mock-exchange fills.
+
+```bash
+python -m sentinel tick-run --mode shadow --once
+python -m sentinel tick-run --mode shadow
+```
+
+With private competition keys configured in the EC2 environment, the continuous mock-exchange command is:
+
+```bash
+python -m sentinel tick-run --mode paper-exchange
+```
+
+Use `deploy/roostoo-tick.service` for this alternative. Do not run both services. Preserve `runtime/tick_paper_exchange.sqlite3`, examine actual maker roles/fees and net probe results, and keep the authenticated operation under supervision until matching and cancellation are verified. No authenticated order was placed while preparing this package. The full-size simulated results do not include the initial small-order stage.
+
+Reproduce the new analysis with `python research/download_limit_data.py`, `python research/evaluate_tick_cycles.py`, and `python research/validate_tick_candidate.py`. These use the included compressed minute candles and archive checksums. The download dates are explicit research endpoints, not rolling current-date defaults.
 
 ## Package contents
 

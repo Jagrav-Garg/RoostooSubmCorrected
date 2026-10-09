@@ -89,8 +89,8 @@ def footer(canvas, doc):
     canvas.restoreState()
 
 
-def main():
-    lines = (ROOT / "STRATEGY_RESEARCH.md").read_text().splitlines()
+def main(source="STRATEGY_RESEARCH.md",output=OUT):
+    lines = (ROOT / source).read_text().splitlines()
     flow = []
     i = 0
     in_sources = False
@@ -112,8 +112,10 @@ def main():
                 group.append(lines[i]); i += 1
             flow.extend([table(group), Spacer(1, 10)])
         elif line.startswith("!["):
-            flow.append(Image(str(ROOT / "research/validation_returns.png"), width=WIDTH, height=WIDTH * 4.8 / 11))
-            flow.append(Paragraph("Historical data, simulated execution and configured costs. Passive references do not establish trading-activity compliance.", styles["caption"]))
+            figure = re.search(r"\]\(([^)]+)\)",line).group(1)
+            flow.append(Image(str(ROOT / figure), width=WIDTH, height=WIDTH * 4.8 / 11))
+            caption = "Historical Binance price proxies, full-size simulated fills and modeled fees. Matching assumptions remain unverified on Roostoo." if source == "TICK_STRATEGY_RESEARCH.md" else "Historical data, simulated execution and configured costs. Passive references do not establish trading-activity compliance."
+            flow.append(Paragraph(caption, styles["caption"]))
             i += 1
         elif line.startswith("- "):
             flow.append(Paragraph("&#8226; " + inline(line[2:]), styles["sourcebullet" if in_sources else "bullet"]))
@@ -130,11 +132,17 @@ def main():
                 flow.extend([box, Spacer(1, 12)])
             else:
                 flow.append(Paragraph(content, styles["source" if in_sources else "body"]))
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    doc = SimpleDocTemplate(str(OUT), pagesize=A4, rightMargin=48, leftMargin=48, topMargin=43, bottomMargin=53, title="Roostoo Competition: Strategy Research and Implementation", author="Roostoo Sentinel research", allowSplitting=True)
+    output = Path(output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    doc = SimpleDocTemplate(str(output), pagesize=A4, rightMargin=48, leftMargin=48, topMargin=43, bottomMargin=53, title=lines[0].lstrip('# '), author="Roostoo Sentinel research", allowSplitting=True)
     doc.build(flow, onFirstPage=footer, onLaterPages=footer)
-    print(OUT)
+    print(output)
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    p=argparse.ArgumentParser()
+    p.add_argument('--source',default='STRATEGY_RESEARCH.md')
+    p.add_argument('--output',default=str(OUT))
+    a=p.parse_args()
+    main(a.source,a.output)

@@ -40,9 +40,16 @@ def main():
     a.add_argument("--mode", choices=["paper", "live"], default="paper")
     a.add_argument("--remote", action="store_true")
     a.add_argument("--output", default="runtime/activity.json")
+    tick = sub.add_parser("tick-run", help="sequential fee-aware limits; default is public-data shadow mode")
+    tick.add_argument("--tick-config", default="tick_config.json")
+    tick.add_argument("--mode", choices=["shadow", "paper-exchange"], default="shadow")
+    tick.add_argument("--once", action="store_true")
     args = ap.parse_args()
-    c = Config.load(args.config)
-    if args.command == "download":
+    c = None if args.command == "tick-run" else Config.load(args.config)
+    if args.command == "tick-run":
+        from .tick import run_tick
+        run_tick(args.tick_config,args.mode,args.once)
+    elif args.command == "download":
         download_history(c.pairs, args.start, args.end, c.data_dir, args.workers)
     elif args.command == "collect":
         from .api import Roostoo

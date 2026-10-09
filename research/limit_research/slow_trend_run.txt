@@ -1,0 +1,22 @@
+[
+  {
+    "name": "trend_long",
+    "mean_14d": 0.0038107193146887986,
+    "median_14d": -0.0017950407904602228,
+    "positive_14d": 7,
+    "over_1pct": 6,
+    "worst_14d": -0.05366219362407232,
+    "best_14d": 0.16348281672864506,
+    "note": "Continuous portfolio with daily gates; windows are descriptive slices, not independent capital resets. Ideal rebalance fills with specified fees; no proof of live maker fills or activity qualification."
+  },
+  {
+    "name": "trend_both",
+    "mean_14d": 0.005575646051226191,
+    "median_14d": -0.006545600202483404,
+    "positive_14d": 7,
+    "over_1pct": 7,
+    "worst_14d": -0.052528727331454195,
+    "best_14d": 0.1295589122066696,
+    "note": "Continuous portfolio with daily gates; windows are descriptive slices, not independent capital resets. Ideal rebalance fills with specified fees; no proof of live maker fills or activity qualification."
+  }
+]

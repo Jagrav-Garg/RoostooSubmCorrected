@@ -1,0 +1,56 @@
+{"coin": "BONK", "done": 6}
+{"coin": "PEPE", "done": 12}
+{"coin": "SHIB", "done": 18}
+{"coin": "1000CHEEMS", "done": 24}
+{"coin": "WLFI", "done": 30}
+{"coin": "STO", "done": 36}
+{"coin": "HEMI", "done": 42}
+{"coin": "LISTA", "done": 48}
+{"coin": "BONK", "spec": "passive_one_tick", "holdout_return": 9.372, "win_rate": 0.9262295081967213, "trades": 854}
+{"coin": "BONK", "spec": "passive_two_tick", "holdout_return": 1.981, "win_rate": 0.6743341404358354, "trades": 826}
+{"coin": "BONK", "spec": "touch_bid_one_tick", "holdout_return": -2.316, "win_rate": 0.7569444444444444, "trades": 144}
+{"coin": "BONK", "spec": "quiet_one_tick", "holdout_return": 10.331, "win_rate": 0.9320046893317703, "trades": 853}
+{"coin": "BONK", "spec": "imbalance_one_tick", "holdout_return": 8.643, "win_rate": 0.9245283018867925, "trades": 848}
+{"coin": "BONK", "spec": "longer_one_tick", "holdout_return": 7.743, "win_rate": 0.9566744730679156, "trades": 854}
+{"coin": "PEPE", "spec": "passive_one_tick", "holdout_return": 13.988, "win_rate": 0.9649122807017544, "trades": 912}
+{"coin": "PEPE", "spec": "passive_two_tick", "holdout_return": 5.847, "win_rate": 0.6868131868131868, "trades": 910}
+{"coin": "PEPE", "spec": "touch_bid_one_tick", "holdout_return": -2.449, "win_rate": 0.6483516483516484, "trades": 91}
+{"coin": "PEPE", "spec": "quiet_one_tick", "holdout_return": 14.628, "win_rate": 0.9682017543859649, "trades": 912}
+{"coin": "PEPE", "spec": "imbalance_one_tick", "holdout_return": 14.109, "win_rate": 0.9649122807017544, "trades": 912}
+{"coin": "PEPE", "spec": "longer_one_tick", "holdout_return": 10.718, "win_rate": 0.9824561403508771, "trades": 912}
+{"coin": "SHIB", "spec": "passive_one_tick", "holdout_return": 3.729, "win_rate": 0.938121546961326, "trades": 905}
+{"coin": "SHIB", "spec": "passive_two_tick", "holdout_return": -2.358, "win_rate": 0.648936170212766, "trades": 376}
+{"coin": "SHIB", "spec": "touch_bid_one_tick", "holdout_return": -2.485, "win_rate": 0.7477477477477478, "trades": 111}
+{"coin": "SHIB", "spec": "quiet_one_tick", "holdout_return": 4.715, "win_rate": 0.9467849223946785, "trades": 902}
+{"coin": "SHIB", "spec": "imbalance_one_tick", "holdout_return": 5.181, "win_rate": 0.951165371809101, "trades": 901}
+{"coin": "SHIB", "spec": "longer_one_tick", "holdout_return": 4.496, "win_rate": 0.9679203539823009, "trades": 904}
+{"coin": "1000CHEEMS", "spec": "passive_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "1000CHEEMS", "spec": "passive_two_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "1000CHEEMS", "spec": "touch_bid_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "1000CHEEMS", "spec": "quiet_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "1000CHEEMS", "spec": "imbalance_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "1000CHEEMS", "spec": "longer_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "WLFI", "spec": "passive_one_tick", "holdout_return": 2.979, "win_rate": 0.9353070175438597, "trades": 912}
+{"coin": "WLFI", "spec": "passive_two_tick", "holdout_return": -2.318, "win_rate": 0.6790697674418604, "trades": 860}
+{"coin": "WLFI", "spec": "touch_bid_one_tick", "holdout_return": -2.499, "win_rate": 0.7342657342657343, "trades": 143}
+{"coin": "WLFI", "spec": "quiet_one_tick", "holdout_return": 3.406, "win_rate": 0.9375, "trades": 912}
+{"coin": "WLFI", "spec": "imbalance_one_tick", "holdout_return": 0.992, "win_rate": 0.9188888888888889, "trades": 900}
+{"coin": "WLFI", "spec": "longer_one_tick", "holdout_return": 4.3, "win_rate": 0.9671052631578947, "trades": 912}
+{"coin": "STO", "spec": "passive_one_tick", "holdout_return": -0.006, "win_rate": 0.8888888888888888, "trades": 9}
+{"coin": "STO", "spec": "passive_two_tick", "holdout_return": -0.335, "win_rate": 0.5, "trades": 8}
+{"coin": "STO", "spec": "touch_bid_one_tick", "holdout_return": -0.457, "win_rate": 0.6666666666666666, "trades": 12}
+{"coin": "STO", "spec": "quiet_one_tick", "holdout_return": -0.042, "win_rate": 0.8571428571428571, "trades": 7}
+{"coin": "STO", "spec": "imbalance_one_tick", "holdout_return": -0.474, "win_rate": 0.6363636363636364, "trades": 11}
+{"coin": "STO", "spec": "longer_one_tick", "holdout_return": -0.049, "win_rate": 0.8888888888888888, "trades": 9}
+{"coin": "HEMI", "spec": "passive_one_tick", "holdout_return": -1.569, "win_rate": 0.8189655172413793, "trades": 116}
+{"coin": "HEMI", "spec": "passive_two_tick", "holdout_return": -2.532, "win_rate": 0.3269230769230769, "trades": 52}
+{"coin": "HEMI", "spec": "touch_bid_one_tick", "holdout_return": -2.497, "win_rate": 0.7478260869565218, "trades": 115}
+{"coin": "HEMI", "spec": "quiet_one_tick", "holdout_return": -1.598, "win_rate": 0.8173913043478261, "trades": 115}
+{"coin": "HEMI", "spec": "imbalance_one_tick", "holdout_return": -1.434, "win_rate": 0.8319327731092437, "trades": 119}
+{"coin": "HEMI", "spec": "longer_one_tick", "holdout_return": -0.7, "win_rate": 0.907563025210084, "trades": 119}
+{"coin": "LISTA", "spec": "passive_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "LISTA", "spec": "passive_two_tick", "holdout_return": -0.172, "win_rate": 0.7586206896551724, "trades": 29}
+{"coin": "LISTA", "spec": "touch_bid_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "LISTA", "spec": "quiet_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "LISTA", "spec": "imbalance_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}
+{"coin": "LISTA", "spec": "longer_one_tick", "holdout_return": 0.0, "win_rate": null, "trades": 0}

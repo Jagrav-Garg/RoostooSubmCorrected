@@ -1,0 +1,308 @@
+[
+  {
+    "coin": "BONK",
+    "fill": "touch",
+    "periods": [
+      {
+        "coin": "BONK",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.024852637388729004,
+        "max_drawdown": -0.025196358196536095,
+        "trades": 383,
+        "win_rate": 0.8746736292428199,
+        "profit_factor": 0.5669009168754636,
+        "active_utc_days": 19,
+        "halts": true,
+        "target_exits": 335,
+        "mean_pnl": -6.488939265986936
+      },
+      {
+        "coin": "BONK",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": 0.09371915350968885,
+        "max_drawdown": -0.0073622161494629745,
+        "trades": 854,
+        "win_rate": 0.9262295081967213,
+        "profit_factor": 2.0025152577891725,
+        "active_utc_days": 36,
+        "halts": false,
+        "target_exits": 791,
+        "mean_pnl": 10.974139755233123
+      }
+    ]
+  },
+  {
+    "coin": "BONK",
+    "fill": "through",
+    "periods": [
+      {
+        "coin": "BONK",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.025379311211155886,
+        "max_drawdown": -0.025379311211155886,
+        "trades": 41,
+        "win_rate": 0.4146341463414634,
+        "profit_factor": 0.061628293314691024,
+        "active_utc_days": 5,
+        "halts": true,
+        "target_exits": 17,
+        "mean_pnl": -61.90075905159999
+      },
+      {
+        "coin": "BONK",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": -0.024538223767702094,
+        "max_drawdown": -0.025084062228386217,
+        "trades": 45,
+        "win_rate": 0.4222222222222222,
+        "profit_factor": 0.15139000067979047,
+        "active_utc_days": 4,
+        "halts": true,
+        "target_exits": 19,
+        "mean_pnl": -54.529386150450335
+      }
+    ]
+  },
+  {
+    "coin": "BONK",
+    "fill": "sampled",
+    "periods": [
+      {
+        "coin": "BONK",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.025075985659122835,
+        "max_drawdown": -0.025075985659122835,
+        "trades": 81,
+        "win_rate": 0.6666666666666666,
+        "profit_factor": 0.16904717254583362,
+        "active_utc_days": 7,
+        "halts": true,
+        "target_exits": 54,
+        "mean_pnl": -30.958006986571295
+      },
+      {
+        "coin": "BONK",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": -0.022471035363447855,
+        "max_drawdown": -0.025198476274097215,
+        "trades": 188,
+        "win_rate": 0.776595744680851,
+        "profit_factor": 0.5967590688747281,
+        "active_utc_days": 8,
+        "halts": true,
+        "target_exits": 146,
+        "mean_pnl": -11.952678384813206
+      }
+    ]
+  },
+  {
+    "coin": "PEPE",
+    "fill": "touch",
+    "periods": [
+      {
+        "coin": "PEPE",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": 1.6753059606540082,
+        "max_drawdown": -0.009240979164590546,
+        "trades": 5699,
+        "win_rate": 0.9742060010528163,
+        "profit_factor": 7.228559460120172,
+        "active_utc_days": 239,
+        "halts": false,
+        "target_exits": 5552,
+        "mean_pnl": 29.396489921986618
+      },
+      {
+        "coin": "PEPE",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": 0.13988136635794945,
+        "max_drawdown": -0.0058924140419323034,
+        "trades": 912,
+        "win_rate": 0.9649122807017544,
+        "profit_factor": 3.975445619272058,
+        "active_utc_days": 38,
+        "halts": false,
+        "target_exits": 880,
+        "mean_pnl": 15.337869118196638
+      }
+    ]
+  },
+  {
+    "coin": "PEPE",
+    "fill": "through",
+    "periods": [
+      {
+        "coin": "PEPE",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.025225537375816343,
+        "max_drawdown": -0.025225537375816343,
+        "trades": 64,
+        "win_rate": 0.609375,
+        "profit_factor": 0.13922995374295213,
+        "active_utc_days": 5,
+        "halts": true,
+        "target_exits": 39,
+        "mean_pnl": -39.414902149713214
+      },
+      {
+        "coin": "PEPE",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": -0.025041945499531315,
+        "max_drawdown": -0.025041945499531315,
+        "trades": 46,
+        "win_rate": 0.34782608695652173,
+        "profit_factor": 0.11944406032837376,
+        "active_utc_days": 4,
+        "halts": true,
+        "target_exits": 16,
+        "mean_pnl": -54.43901195550274
+      }
+    ]
+  },
+  {
+    "coin": "PEPE",
+    "fill": "sampled",
+    "periods": [
+      {
+        "coin": "PEPE",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.025303707392761887,
+        "max_drawdown": -0.025303707392761887,
+        "trades": 82,
+        "win_rate": 0.6707317073170732,
+        "profit_factor": 0.19574138254753348,
+        "active_utc_days": 5,
+        "halts": true,
+        "target_exits": 55,
+        "mean_pnl": -30.858179747269794
+      },
+      {
+        "coin": "PEPE",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": 0.011080529459827293,
+        "max_drawdown": -0.025202515657690494,
+        "trades": 637,
+        "win_rate": 0.8728414442700158,
+        "profit_factor": 1.1047722047390074,
+        "active_utc_days": 28,
+        "halts": true,
+        "target_exits": 556,
+        "mean_pnl": 1.7394865714013699
+      }
+    ]
+  },
+  {
+    "coin": "SHIB",
+    "fill": "touch",
+    "periods": [
+      {
+        "coin": "SHIB",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": 0.3880366743886703,
+        "max_drawdown": -0.01121525465606732,
+        "trades": 4352,
+        "win_rate": 0.9574908088235294,
+        "profit_factor": 2.452724041027744,
+        "active_utc_days": 189,
+        "halts": false,
+        "target_exits": 4167,
+        "mean_pnl": 8.916283878416136
+      },
+      {
+        "coin": "SHIB",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": 0.037285989364092886,
+        "max_drawdown": -0.009718692297014053,
+        "trades": 905,
+        "win_rate": 0.938121546961326,
+        "profit_factor": 1.5299447699489463,
+        "active_utc_days": 38,
+        "halts": false,
+        "target_exits": 849,
+        "mean_pnl": 4.119998824761859
+      }
+    ]
+  },
+  {
+    "coin": "SHIB",
+    "fill": "through",
+    "periods": [
+      {
+        "coin": "SHIB",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.024945016469080317,
+        "max_drawdown": -0.025039581204885364,
+        "trades": 54,
+        "win_rate": 0.5370370370370371,
+        "profit_factor": 0.10697505531525918,
+        "active_utc_days": 4,
+        "halts": true,
+        "target_exits": 29,
+        "mean_pnl": -46.194474942741444
+      },
+      {
+        "coin": "SHIB",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": -0.025198588594739668,
+        "max_drawdown": -0.025198588594739668,
+        "trades": 42,
+        "win_rate": 0.38095238095238093,
+        "profit_factor": 0.08141817229328982,
+        "active_utc_days": 4,
+        "halts": true,
+        "target_exits": 16,
+        "mean_pnl": -59.99663951128599
+      }
+    ]
+  },
+  {
+    "coin": "SHIB",
+    "fill": "sampled",
+    "periods": [
+      {
+        "coin": "SHIB",
+        "start": "2026-01-02 00:00:00+00:00",
+        "end": "2026-09-01 00:00:00+00:00",
+        "return": -0.025197419105584595,
+        "max_drawdown": -0.025291959362371497,
+        "trades": 104,
+        "win_rate": 0.7211538461538461,
+        "profit_factor": 0.22346357183636753,
+        "active_utc_days": 6,
+        "halts": true,
+        "target_exits": 75,
+        "mean_pnl": -24.22828760152386
+      },
+      {
+        "coin": "SHIB",
+        "start": "2026-09-01 00:00:00+00:00",
+        "end": "2026-10-09 00:00:00+00:00",
+        "return": -0.02155299366186414,
+        "max_drawdown": -0.025072020867330513,
+        "trades": 514,
+        "win_rate": 0.8696498054474708,
+        "profit_factor": 0.735497514477474,
+        "active_utc_days": 22,
+        "halts": true,
+        "target_exits": 447,
+        "mean_pnl": -4.193189428378274
+      }
+    ]
+  }
+]

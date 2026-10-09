@@ -1,0 +1,2 @@
+{"timestamp_ms": 1791558893238, "event": "tick_startup", "permission_basis": "User clarification: sequential tick scalping is permitted.", "mode": "shadow", "config_hash": "ff0b9ee74532a1df154cd378c9d49e895d7731ad4f89d5ecf55f2998efa971e5", "commit": "aa3d240a3e2b0e387798367aad00f691d01ac691"}
+{"timestamp_ms": 1791558910241, "event": "tick_portfolio", "equity": 100000.0, "phase": "idle", "pair": null, "cycles_today": 0, "mode": "shadow", "config_hash": "ff0b9ee74532a1df154cd378c9d49e895d7731ad4f89d5ecf55f2998efa971e5", "commit": "aa3d240a3e2b0e387798367aad00f691d01ac691"}

@@ -1,0 +1,58 @@
+[
+  {
+    "reference": "quotes",
+    "observed_samples": 30,
+    "start_ms": 1791557615949,
+    "end_ms": 1791558680097,
+    "cash": 100000.0,
+    "state": {
+      "phase": "entry",
+      "position": null,
+      "order": {
+        "id": "21909fd91c0542899bab8f8a4b3366ea7a41442defa5448d6dcd3117e38db174",
+        "intent": "21909fd91c0542899bab8f8a4b3366ea7a41442defa5448d6dcd3117e38db174",
+        "side": "BUY",
+        "quantity": 25839793.0,
+        "price": 3.87e-06,
+        "type": "LIMIT",
+        "created": 1791558680097,
+        "before_qty": 0.0,
+        "before_usd": 100000.0
+      },
+      "last_entry": 0,
+      "cooldown": 1791558451165,
+      "pair": "PEPE/USD"
+    },
+    "closed_cycles": 0,
+    "samples": [],
+    "scope": "Replay of observed public quotes only, with initial $100 probe size. No authenticated order or actual Roostoo fill."
+  },
+  {
+    "reference": "last",
+    "observed_samples": 30,
+    "start_ms": 1791557615949,
+    "end_ms": 1791558680097,
+    "cash": 100000.0,
+    "state": {
+      "phase": "entry",
+      "position": null,
+      "order": {
+        "id": "21909fd91c0542899bab8f8a4b3366ea7a41442defa5448d6dcd3117e38db174",
+        "intent": "21909fd91c0542899bab8f8a4b3366ea7a41442defa5448d6dcd3117e38db174",
+        "side": "BUY",
+        "quantity": 25839793.0,
+        "price": 3.87e-06,
+        "type": "LIMIT",
+        "created": 1791558680097,
+        "before_qty": 0.0,
+        "before_usd": 100000.0
+      },
+      "last_entry": 0,
+      "cooldown": 1791558451165,
+      "pair": "PEPE/USD"
+    },
+    "closed_cycles": 0,
+    "samples": [],
+    "scope": "Replay of observed public quotes only, with initial $100 probe size. No authenticated order or actual Roostoo fill."
+  }
+]

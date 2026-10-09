@@ -1,0 +1,862 @@
+[
+  {
+    "pair": "BONK/USD",
+    "price": 3.32e-06,
+    "tick": 1e-08,
+    "tick_bps": 30.120481927710845,
+    "one_tick_net_bps": 20.095373999748922,
+    "spread_bps": 30.120481927710554,
+    "volume": 3253572.73636045,
+    "can_trade": true
+  },
+  {
+    "pair": "PEPE/USD",
+    "price": 3.88e-06,
+    "tick": 1e-08,
+    "tick_bps": 25.77319587628866,
+    "one_tick_net_bps": 15.752433061819726,
+    "spread_bps": 25.773195876288412,
+    "volume": 39731848.34835799,
+    "can_trade": true
+  },
+  {
+    "pair": "STO/USD",
+    "price": 0.039,
+    "tick": 0.0001,
+    "tick_bps": 25.641025641025642,
+    "one_tick_net_bps": 15.620394930739856,
+    "spread_bps": 25.641025641026374,
+    "volume": 646894.34458,
+    "can_trade": true
+  },
+  {
+    "pair": "1000CHEEMS/USD",
+    "price": 0.000503,
+    "tick": 1e-06,
+    "tick_bps": 19.880715705765407,
+    "one_tick_net_bps": 9.865842426699523,
+    "spread_bps": 19.88071570576589,
+    "volume": 506365.471251,
+    "can_trade": true
+  },
+  {
+    "pair": "WLFI/USD",
+    "price": 0.0536,
+    "tick": 0.0001,
+    "tick_bps": 18.65671641791045,
+    "one_tick_net_bps": 8.643066526439203,
+    "spread_bps": 18.65671641791098,
+    "volume": 6490742.68721,
+    "can_trade": true
+  },
+  {
+    "pair": "SHIB/USD",
+    "price": 5.37e-06,
+    "tick": 1e-08,
+    "tick_bps": 18.6219739292365,
+    "one_tick_net_bps": 8.608358762891566,
+    "spread_bps": 18.62197392923632,
+    "volume": 6015510.32399751,
+    "can_trade": true
+  },
+  {
+    "pair": "HEMI/USD",
+    "price": 0.00573,
+    "tick": 1e-05,
+    "tick_bps": 17.452006980802793,
+    "one_tick_net_bps": 7.43956119671596,
+    "spread_bps": 17.452006980803596,
+    "volume": 2293977.166506,
+    "can_trade": true
+  },
+  {
+    "pair": "LISTA/USD",
+    "price": 0.0796,
+    "tick": 0.0001,
+    "tick_bps": 12.562814070351758,
+    "one_tick_net_bps": 2.5552550358010073,
+    "spread_bps": 12.562814070350374,
+    "volume": 333963.02318,
+    "can_trade": true
+  },
+  {
+    "pair": "OPEN/USD",
+    "price": 0.1074,
+    "tick": 0.0001,
+    "tick_bps": 9.31098696461825,
+    "one_tick_net_bps": -0.6933218679283648,
+    "spread_bps": 9.310986964618516,
+    "volume": 2705625.67026,
+    "can_trade": true
+  },
+  {
+    "pair": "DOT/USD",
+    "price": 1.167,
+    "tick": 0.001,
+    "tick_bps": 8.56898029134533,
+    "one_tick_net_bps": -1.434586905346702,
+    "spread_bps": 8.56898029134629,
+    "volume": 22748406.43534,
+    "can_trade": true
+  },
+  {
+    "pair": "AVNT/USD",
+    "price": 0.1333,
+    "tick": 0.0001,
+    "tick_bps": 7.501875468867217,
+    "one_tick_net_bps": -2.500625156289793,
+    "spread_bps": 7.50187546886639,
+    "volume": 2140063.20056,
+    "can_trade": true
+  },
+  {
+    "pair": "PLUME/USD",
+    "price": 0.01785,
+    "tick": 1e-05,
+    "tick_bps": 5.602240896358543,
+    "one_tick_net_bps": -4.398361043568277,
+    "spread_bps": 5.602240896358315,
+    "volume": 5268341.21693,
+    "can_trade": true
+  },
+  {
+    "pair": "ARB/USD",
+    "price": 0.1798,
+    "tick": 0.0001,
+    "tick_bps": 5.561735261401558,
+    "one_tick_net_bps": -4.438826193131629,
+    "spread_bps": 5.561735261402489,
+    "volume": 18655657.79843,
+    "can_trade": true
+  },
+  {
+    "pair": "TRUMP/USD",
+    "price": 1.849,
+    "tick": 0.001,
+    "tick_bps": 5.408328826392645,
+    "one_tick_net_bps": -4.592079298371132,
+    "spread_bps": 5.40832882639325,
+    "volume": 13597758.341355,
+    "can_trade": true
+  },
+  {
+    "pair": "BMT/USD",
+    "price": 0.01869,
+    "tick": 1e-05,
+    "tick_bps": 5.350454788657037,
+    "one_tick_net_bps": -4.649895490990152,
+    "spread_bps": 5.350454788658674,
+    "volume": 713150.482439,
+    "can_trade": true
+  },
+  {
+    "pair": "XLM/USD",
+    "price": 0.1927,
+    "tick": 0.0001,
+    "tick_bps": 5.189413596263622,
+    "one_tick_net_bps": -4.8107757226734105,
+    "spread_bps": 5.1894135962630505,
+    "volume": 17937345.9989,
+    "can_trade": true
+  },
+  {
+    "pair": "SOMI/USD",
+    "price": 0.2053,
+    "tick": 0.0001,
+    "tick_bps": 4.870920603994155,
+    "one_tick_net_bps": -5.128950381115827,
+    "spread_bps": 4.870920603993619,
+    "volume": 747172.89194,
+    "can_trade": true
+  },
+  {
+    "pair": "PENDLE/USD",
+    "price": 2.103,
+    "tick": 0.001,
+    "tick_bps": 4.75511174512601,
+    "one_tick_net_bps": -5.244643489002998,
+    "spread_bps": 4.755111745127598,
+    "volume": 5613815.6035,
+    "can_trade": true
+  },
+  {
+    "pair": "WIF/USD",
+    "price": 0.2115,
+    "tick": 0.0001,
+    "tick_bps": 4.7281323877068555,
+    "one_tick_net_bps": -5.271595880546043,
+    "spread_bps": 4.728132387707648,
+    "volume": 2940346.282254,
+    "can_trade": true
+  },
+  {
+    "pair": "FET/USD",
+    "price": 0.217,
+    "tick": 0.0001,
+    "tick_bps": 4.6082949308755765,
+    "one_tick_net_bps": -5.391313559809374,
+    "spread_bps": 4.6082949308750685,
+    "volume": 26025727.57363,
+    "can_trade": true
+  },
+  {
+    "pair": "CAKE/USD",
+    "price": 2.183,
+    "tick": 0.001,
+    "tick_bps": 4.580852038479158,
+    "one_tick_net_bps": -5.418729023027868,
+    "spread_bps": 4.580852038480687,
+    "volume": 8200507.84819,
+    "can_trade": true
+  },
+  {
+    "pair": "ENA/USD",
+    "price": 0.2184,
+    "tick": 0.0001,
+    "tick_bps": 4.5787545787545785,
+    "one_tick_net_bps": -5.420824386339618,
+    "spread_bps": 4.578754578754074,
+    "volume": 64528525.975656,
+    "can_trade": true
+  },
+  {
+    "pair": "EIGEN/USD",
+    "price": 0.2198,
+    "tick": 0.0001,
+    "tick_bps": 4.549590536851683,
+    "one_tick_net_bps": -5.449959278777117,
+    "spread_bps": 4.549590536852445,
+    "volume": 9035230.629056,
+    "can_trade": true
+  },
+  {
+    "pair": "TUT/USD",
+    "price": 0.02227,
+    "tick": 1e-05,
+    "tick_bps": 4.49034575662326,
+    "one_tick_net_bps": -5.509144843832692,
+    "spread_bps": 4.490345756623077,
+    "volume": 1788921.14557,
+    "can_trade": true
+  },
+  {
+    "pair": "ADA/USD",
+    "price": 0.2376,
+    "tick": 0.0001,
+    "tick_bps": 4.2087542087542085,
+    "one_tick_net_bps": -5.790454940878265,
+    "spread_bps": 4.208754208753745,
+    "volume": 64388661.06455,
+    "can_trade": true
+  },
+  {
+    "pair": "LINEA/USD",
+    "price": 0.002667,
+    "tick": 1e-06,
+    "tick_bps": 3.749531308586427,
+    "one_tick_net_bps": -6.249218847642624,
+    "spread_bps": 3.749531308586924,
+    "volume": 808453.479249,
+    "can_trade": true
+  },
+  {
+    "pair": "FORM/USD",
+    "price": 0.2685,
+    "tick": 0.0001,
+    "tick_bps": 3.7243947858472994,
+    "one_tick_net_bps": -6.2743302464218775,
+    "spread_bps": 7.448789571693779,
+    "volume": 3490807.28943,
+    "can_trade": true
+  },
+  {
+    "pair": "FLOKI/USD",
+    "price": 2.695e-05,
+    "tick": 1e-08,
+    "tick_bps": 3.7105751391465676,
+    "one_tick_net_bps": -6.288136080380147,
+    "spread_bps": 3.7105751391459036,
+    "volume": 2894670.47017348,
+    "can_trade": true
+  },
+  {
+    "pair": "TAO/USD",
+    "price": 274.0,
+    "tick": 0.1,
+    "tick_bps": 3.6496350364963503,
+    "one_tick_net_bps": -6.349015273383607,
+    "spread_bps": 3.6496350364971804,
+    "volume": 49547099.00327,
+    "can_trade": true
+  },
+  {
+    "pair": "BIO/USD",
+    "price": 0.02804,
+    "tick": 1e-05,
+    "tick_bps": 3.566333808844508,
+    "one_tick_net_bps": -6.432233241437935,
+    "spread_bps": 7.132667617688726,
+    "volume": 1421398.568629,
+    "can_trade": true
+  },
+  {
+    "pair": "ICP/USD",
+    "price": 2.984,
+    "tick": 0.001,
+    "tick_bps": 3.351206434316354,
+    "one_tick_net_bps": -6.647145596102577,
+    "spread_bps": 3.351206434315985,
+    "volume": 12264056.81693,
+    "can_trade": true
+  },
+  {
+    "pair": "TRX/USD",
+    "price": 0.3327,
+    "tick": 0.0001,
+    "tick_bps": 3.005710850616171,
+    "one_tick_net_bps": -6.992295856879105,
+    "spread_bps": 3.0057108506158396,
+    "volume": 27545868.06409,
+    "can_trade": true
+  },
+  {
+    "pair": "CRV/USD",
+    "price": 0.3572,
+    "tick": 0.0001,
+    "tick_bps": 2.7995520716685327,
+    "one_tick_net_bps": -7.198248580077005,
+    "spread_bps": 2.7995520716682245,
+    "volume": 9097005.97697,
+    "can_trade": true
+  },
+  {
+    "pair": "S/USD",
+    "price": 0.04476,
+    "tick": 1e-05,
+    "tick_bps": 2.234137622877569,
+    "one_tick_net_bps": -7.763097896983373,
+    "spread_bps": 6.70241286863321,
+    "volume": 5467442.280782,
+    "can_trade": true
+  },
+  {
+    "pair": "NEAR/USD",
+    "price": 4.781,
+    "tick": 0.001,
+    "tick_bps": 2.0916126333403056,
+    "one_tick_net_bps": -7.905480432757184,
+    "spread_bps": 2.091612633341004,
+    "volume": 240649612.4008,
+    "can_trade": true
+  },
+  {
+    "pair": "ONDO/USD",
+    "price": 0.4812,
+    "tick": 0.0001,
+    "tick_bps": 2.0781379883624274,
+    "one_tick_net_bps": -7.918941609825758,
+    "spread_bps": 2.078137988362198,
+    "volume": 45485762.97103,
+    "can_trade": true
+  },
+  {
+    "pair": "MIRA/USD",
+    "price": 0.04831,
+    "tick": 1e-05,
+    "tick_bps": 2.06996481059822,
+    "one_tick_net_bps": -7.927106618496049,
+    "spread_bps": 2.0699648105988535,
+    "volume": 828088.404223,
+    "can_trade": true
+  },
+  {
+    "pair": "WLD/USD",
+    "price": 0.492,
+    "tick": 0.0001,
+    "tick_bps": 2.032520325203252,
+    "one_tick_net_bps": -7.964513678120344,
+    "spread_bps": 2.0325203252030284,
+    "volume": 38187419.54652,
+    "can_trade": true
+  },
+  {
+    "pair": "CFX/USD",
+    "price": 0.04933,
+    "tick": 1e-05,
+    "tick_bps": 2.027163997567403,
+    "one_tick_net_bps": -7.969864652104253,
+    "spread_bps": 6.081491992701259,
+    "volume": 1522375.41771,
+    "can_trade": true
+  },
+  {
+    "pair": "PUMP/USD",
+    "price": 0.005521,
+    "tick": 1e-06,
+    "tick_bps": 1.8112660749864156,
+    "one_tick_net_bps": -8.185546784656994,
+    "spread_bps": 1.811266074986656,
+    "volume": 45987252.978725,
+    "can_trade": true
+  },
+  {
+    "pair": "EDEN/USD",
+    "price": 0.06137,
+    "tick": 1e-05,
+    "tick_bps": 1.6294606485253382,
+    "one_tick_net_bps": -8.367170496549337,
+    "spread_bps": 9.77676389115163,
+    "volume": 808173.387927,
+    "can_trade": true
+  },
+  {
+    "pair": "LTC/USD",
+    "price": 63.39,
+    "tick": 0.01,
+    "tick_bps": 1.5775358889414735,
+    "one_tick_net_bps": -8.419043357323908,
+    "spread_bps": 1.5775358889411595,
+    "volume": 24410501.51364,
+    "can_trade": true
+  },
+  {
+    "pair": "ZEN/USD",
+    "price": 6.377,
+    "tick": 0.001,
+    "tick_bps": 1.5681354869060686,
+    "one_tick_net_bps": -8.428434363654258,
+    "spread_bps": 3.136270973813185,
+    "volume": 4660814.64084,
+    "can_trade": true
+  },
+  {
+    "pair": "SEI/USD",
+    "price": 0.06554,
+    "tick": 1e-05,
+    "tick_bps": 1.5257857796765335,
+    "one_tick_net_bps": -8.470741742342414,
+    "spread_bps": 1.5257857796759418,
+    "volume": 7029729.822388,
+    "can_trade": true
+  },
+  {
+    "pair": "ASTER/USD",
+    "price": 0.6978,
+    "tick": 0.0001,
+    "tick_bps": 1.4330753797649758,
+    "one_tick_net_bps": -8.563359478186428,
+    "spread_bps": 1.433075379764818,
+    "volume": 18218878.660102,
+    "can_trade": true
+  },
+  {
+    "pair": "VIRTUAL/USD",
+    "price": 0.7098,
+    "tick": 0.0001,
+    "tick_bps": 1.4088475626937165,
+    "one_tick_net_bps": -8.587563079546223,
+    "spread_bps": 2.817695125387123,
+    "volume": 9202235.80865,
+    "can_trade": true
+  },
+  {
+    "pair": "UNI/USD",
+    "price": 7.384,
+    "tick": 0.001,
+    "tick_bps": 1.3542795232936078,
+    "one_tick_net_bps": -8.64207657817806,
+    "spread_bps": 1.35427952329406,
+    "volume": 86666764.34077,
+    "can_trade": true
+  },
+  {
+    "pair": "APT/USD",
+    "price": 0.7988,
+    "tick": 0.0001,
+    "tick_bps": 1.2518778167250877,
+    "one_tick_net_bps": -8.744375934215398,
+    "spread_bps": 1.2518778167249498,
+    "volume": 21934273.741569,
+    "can_trade": true
+  },
+  {
+    "pair": "PENGU/USD",
+    "price": 0.008022,
+    "tick": 1e-06,
+    "tick_bps": 1.2465719272001996,
+    "one_tick_net_bps": -8.749676520503069,
+    "spread_bps": 1.2465719271992837,
+    "volume": 13277552.501295,
+    "can_trade": true
+  },
+  {
+    "pair": "XPL/USD",
+    "price": 0.08437,
+    "tick": 1e-05,
+    "tick_bps": 1.185255422543558,
+    "one_tick_net_bps": -8.810931739298145,
+    "spread_bps": 1.1852554225430987,
+    "volume": 10160146.479813,
+    "can_trade": true
+  },
+  {
+    "pair": "DOGE/USD",
+    "price": 0.08464,
+    "tick": 1e-05,
+    "tick_bps": 1.1814744801512287,
+    "one_tick_net_bps": -8.814708902636914,
+    "spread_bps": 1.1814744801507706,
+    "volume": 89878279.77166,
+    "can_trade": true
+  },
+  {
+    "pair": "CRCLB/USD",
+    "price": 85.82,
+    "tick": 0.01,
+    "tick_bps": 1.1652295502213936,
+    "one_tick_net_bps": -8.83093759575404,
+    "spread_bps": 1.1652295502219898,
+    "volume": 25785680.6037,
+    "can_trade": true
+  },
+  {
+    "pair": "HBAR/USD",
+    "price": 0.09079,
+    "tick": 1e-05,
+    "tick_bps": 1.101442890186144,
+    "one_tick_net_bps": -8.894660501007623,
+    "spread_bps": 1.101442890185717,
+    "volume": 19973099.18475,
+    "can_trade": true
+  },
+  {
+    "pair": "POL/USD",
+    "price": 0.09917,
+    "tick": 1e-05,
+    "tick_bps": 1.0083694665725522,
+    "one_tick_net_bps": -8.987640897709648,
+    "spread_bps": 1.0083694665721612,
+    "volume": 8836859.120364,
+    "can_trade": true
+  },
+  {
+    "pair": "AVAX/USD",
+    "price": 10.196,
+    "tick": 0.001,
+    "tick_bps": 0.9807767752059632,
+    "one_tick_net_bps": -9.01520601017669,
+    "spread_bps": 0.9807767752054196,
+    "volume": 51120639.99885,
+    "can_trade": true
+  },
+  {
+    "pair": "SUI/USD",
+    "price": 1.0592,
+    "tick": 0.0001,
+    "tick_bps": 0.9441087613293052,
+    "one_tick_net_bps": -9.051837374364213,
+    "spread_bps": 0.9441087613292012,
+    "volume": 97991954.06383,
+    "can_trade": true
+  },
+  {
+    "pair": "INTCB/USD",
+    "price": 106.42,
+    "tick": 0.01,
+    "tick_bps": 0.9396729937981583,
+    "one_tick_net_bps": -9.056268708342863,
+    "spread_bps": 0.9396729937973036,
+    "volume": 4779867.24961,
+    "can_trade": true
+  },
+  {
+    "pair": "FIL/USD",
+    "price": 1.0757,
+    "tick": 0.0001,
+    "tick_bps": 0.9296272194849864,
+    "one_tick_net_bps": -9.066304441902595,
+    "spread_bps": 1.859254438969768,
+    "volume": 18776653.623547,
+    "can_trade": true
+  },
+  {
+    "pair": "SOL/USD",
+    "price": 110.14,
+    "tick": 0.01,
+    "tick_bps": 0.9079353550027238,
+    "one_tick_net_bps": -9.087974625360262,
+    "spread_bps": 0.9079353550031883,
+    "volume": 346082155.88979,
+    "can_trade": true
+  },
+  {
+    "pair": "LINK/USD",
+    "price": 12.82,
+    "tick": 0.001,
+    "tick_bps": 0.7800312012480499,
+    "one_tick_net_bps": -9.215750938882383,
+    "spread_bps": 0.7800312012476176,
+    "volume": 33996994.59451,
+    "can_trade": true
+  },
+  {
+    "pair": "XRP/USD",
+    "price": 1.3848,
+    "tick": 0.0001,
+    "tick_bps": 0.7221259387637203,
+    "one_tick_net_bps": -9.273598325041377,
+    "spread_bps": 0.7221259387636408,
+    "volume": 222321597.07508,
+    "can_trade": true
+  },
+  {
+    "pair": "GLWB/USD",
+    "price": 153.89,
+    "tick": 0.01,
+    "tick_bps": 0.6498148027812074,
+    "one_tick_net_bps": -9.345837186026662,
+    "spread_bps": 7.147962830594168,
+    "volume": 532989.4584,
+    "can_trade": true
+  },
+  {
+    "pair": "MSTRB/USD",
+    "price": 155.82,
+    "tick": 0.01,
+    "tick_bps": 0.6417661404184315,
+    "one_tick_net_bps": -9.353877803750521,
+    "spread_bps": 0.6417661404196718,
+    "volume": 12443844.03505,
+    "can_trade": true
+  },
+  {
+    "pair": "SPCXB/USD",
+    "price": 163.67,
+    "tick": 0.01,
+    "tick_bps": 0.6109855196431845,
+    "one_tick_net_bps": -9.384627659286826,
+    "spread_bps": 0.6109855196443653,
+    "volume": 34287476.40157,
+    "can_trade": true
+  },
+  {
+    "pair": "CBRSB/USD",
+    "price": 166.15,
+    "tick": 0.01,
+    "tick_bps": 0.6018657839301835,
+    "one_tick_net_bps": -9.393738279820374,
+    "spread_bps": 4.2130604875125846,
+    "volume": 1765805.21444,
+    "can_trade": true
+  },
+  {
+    "pair": "AAVE/USD",
+    "price": 169.13,
+    "tick": 0.01,
+    "tick_bps": 0.591261160054396,
+    "one_tick_net_bps": -9.404332304372431,
+    "spread_bps": 0.5912611600555387,
+    "volume": 29683839.99353,
+    "can_trade": true
+  },
+  {
+    "pair": "SKHYB/USD",
+    "price": 169.95,
+    "tick": 0.01,
+    "tick_bps": 0.5884083553986467,
+    "one_tick_net_bps": -9.407182257650248,
+    "spread_bps": 1.1768167107978955,
+    "volume": 3561033.2001,
+    "can_trade": true
+  },
+  {
+    "pair": "QCOMB/USD",
+    "price": 173.74,
+    "tick": 0.01,
+    "tick_bps": 0.5755726948313572,
+    "one_tick_net_bps": -9.42000508897034,
+    "spread_bps": 5.180154253482411,
+    "volume": 414192.66803,
+    "can_trade": true
+  },
+  {
+    "pair": "COINB/USD",
+    "price": 179.91,
+    "tick": 0.01,
+    "tick_bps": 0.5558334722917014,
+    "one_tick_net_bps": -9.439724582153142,
+    "spread_bps": 3.8908343060415307,
+    "volume": 5718690.5224,
+    "can_trade": true
+  },
+  {
+    "pair": "PLTRB/USD",
+    "price": 202.54,
+    "tick": 0.01,
+    "tick_bps": 0.49372963365261185,
+    "one_tick_net_bps": -9.50176634799016,
+    "spread_bps": 4.937296336525838,
+    "volume": 190931.47886,
+    "can_trade": true
+  },
+  {
+    "pair": "NBISB/USD",
+    "price": 221.38,
+    "tick": 0.01,
+    "tick_bps": 0.4517119884361731,
+    "one_tick_net_bps": -9.543741996558275,
+    "spread_bps": 4.065407895925712,
+    "volume": 901858.14475,
+    "can_trade": true
+  },
+  {
+    "pair": "NVDAB/USD",
+    "price": 231.29,
+    "tick": 0.01,
+    "tick_bps": 0.43235764624497386,
+    "one_tick_net_bps": -9.563076994081321,
+    "spread_bps": 0.43235764624580947,
+    "volume": 8589090.67585,
+    "can_trade": true
+  },
+  {
+    "pair": "GOOGLB/USD",
+    "price": 351.64,
+    "tick": 0.01,
+    "tick_bps": 0.2843817540666591,
+    "one_tick_net_bps": -9.710904984316926,
+    "spread_bps": 1.7062905244000193,
+    "volume": 1671712.02163,
+    "can_trade": true
+  },
+  {
+    "pair": "TSLAB/USD",
+    "price": 387.93,
+    "tick": 0.01,
+    "tick_bps": 0.25777846518701825,
+    "one_tick_net_bps": -9.737481683202986,
+    "spread_bps": 0.2577784651867838,
+    "volume": 3889791.64698,
+    "can_trade": true
+  },
+  {
+    "pair": "WDCB/USD",
+    "price": 391.42,
+    "tick": 0.01,
+    "tick_bps": 0.25548004700832866,
+    "one_tick_net_bps": -9.739777804110838,
+    "spread_bps": 5.3650809871743785,
+    "volume": 396866.77373,
+    "can_trade": true
+  },
+  {
+    "pair": "MSFTB/USD",
+    "price": 533.68,
+    "tick": 0.01,
+    "tick_bps": 0.18737820416729128,
+    "one_tick_net_bps": -9.807811579145564,
+    "spread_bps": 2.6232948583439524,
+    "volume": 483747.9978,
+    "can_trade": true
+  },
+  {
+    "pair": "AMDB/USD",
+    "price": 613.66,
+    "tick": 0.01,
+    "tick_bps": 0.1629566861128312,
+    "one_tick_net_bps": -9.83220868788548,
+    "spread_bps": 1.7925235472413656,
+    "volume": 1459402.99724,
+    "can_trade": true
+  },
+  {
+    "pair": "METAB/USD",
+    "price": 723.54,
+    "tick": 0.01,
+    "tick_bps": 0.1382093595378279,
+    "one_tick_net_bps": -9.856931279501602,
+    "spread_bps": 1.7967216739917,
+    "volume": 795975.21436,
+    "can_trade": true
+  },
+  {
+    "pair": "BNB/USD",
+    "price": 741.33,
+    "tick": 0.01,
+    "tick_bps": 0.13489269286282762,
+    "one_tick_net_bps": -9.860244631165749,
+    "spread_bps": 0.13489269286270492,
+    "volume": 135135057.15508,
+    "can_trade": true
+  },
+  {
+    "pair": "MUB/USD",
+    "price": 1026.08,
+    "tick": 0.01,
+    "tick_bps": 0.097458287852799,
+    "one_tick_net_bps": -9.897641620481012,
+    "spread_bps": 0.38983315141084146,
+    "volume": 7483827.89196,
+    "can_trade": true
+  },
+  {
+    "pair": "LITEB/USD",
+    "price": 1118.04,
+    "tick": 0.01,
+    "tick_bps": 0.08944223820256879,
+    "one_tick_net_bps": -9.905649658087379,
+    "spread_bps": 1.699402525849295,
+    "volume": 1638289.77176,
+    "can_trade": true
+  },
+  {
+    "pair": "ZEC/USD",
+    "price": 1219.7,
+    "tick": 0.01,
+    "tick_bps": 0.08198737394441256,
+    "one_tick_net_bps": -9.91309707120469,
+    "spread_bps": 0.08198737394433799,
+    "volume": 302772689.73261,
+    "can_trade": true
+  },
+  {
+    "pair": "SNDKB/USD",
+    "price": 1602.84,
+    "tick": 0.01,
+    "tick_bps": 0.062389259065159346,
+    "one_tick_net_bps": -9.932675597764673,
+    "spread_bps": 0.43672481345571823,
+    "volume": 12373055.138151,
+    "can_trade": true
+  },
+  {
+    "pair": "ETH/USD",
+    "price": 2491.57,
+    "tick": 0.01,
+    "tick_bps": 0.04013533635418631,
+    "one_tick_net_bps": -9.954907277673897,
+    "spread_bps": 0.04013533635323724,
+    "volume": 867696671.920319,
+    "can_trade": true
+  },
+  {
+    "pair": "PAXG/USD",
+    "price": 4182.7,
+    "tick": 0.01,
+    "tick_bps": 0.02390800200827217,
+    "one_tick_net_bps": -9.971118392794187,
+    "spread_bps": 0.02390800200879403,
+    "volume": 21724557.161697,
+    "can_trade": true
+  },
+  {
+    "pair": "BTC/USD",
+    "price": 83023.99,
+    "tick": 0.01,
+    "tick_bps": 0.0012044711414134638,
+    "one_tick_net_bps": -9.993799231478029,
+    "spread_bps": 0.0012044711407824787,
+    "volume": 1486892485.8517437,
+    "can_trade": true
+  }
+]

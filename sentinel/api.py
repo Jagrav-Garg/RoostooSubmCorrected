@@ -130,6 +130,16 @@ class Roostoo:
             raise ValueError("Spot endpoint accepts BUY or SELL only")
         return self._request("POST", "/v3/place_order", {"pair": pair, "side": side, "type": "MARKET", "quantity": quantity}, signed=True, mutation=True)
 
+    def place_limit(self, pair: str, side: str, quantity: str, price: str):
+        if side not in {"BUY", "SELL"} or Decimal(price) <= 0 or Decimal(quantity) <= 0:
+            raise ValueError("Invalid spot limit order")
+        return self._request("POST", "/v3/place_order", {"pair": pair, "side": side, "type": "LIMIT", "quantity": quantity, "price": price}, signed=True, mutation=True)
+
+    def cancel_order(self, order_id):
+        if order_id is None:
+            raise ValueError("Cancellation must name one owned order")
+        return self._request("POST", "/v3/cancel_order", {"order_id": str(order_id)}, signed=True, mutation=True)
+
     def short_open(self, pair: str, collateral: str):
         # 1x collateral sizing is defined by Roostoo. Never send quantity/side to this endpoint.
         return self._request("POST", "/v6/short_open", {"pair": pair, "collateral": collateral}, signed=True, mutation=True)

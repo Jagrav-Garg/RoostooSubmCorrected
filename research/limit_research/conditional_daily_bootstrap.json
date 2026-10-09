@@ -1,0 +1,6 @@
+{
+  "days": 38,
+  "mean_daily_pnl_over_initial_cash": 0.003681088588367194,
+  "one_sided_90pct_lower_mean": 0.003229652207137381,
+  "caveat": "Conditional on touch fills, full simulated quantity, fixed precision and historical proxy. Not a confidence bound for the actual Roostoo matching engine or simultaneous strategy selection."
+}
