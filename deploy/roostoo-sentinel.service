@@ -1,0 +1,24 @@
+[Unit]
+Description=Roostoo Sentinel autonomous competition bot
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/roostoo_sentinel
+EnvironmentFile=/home/ubuntu/roostoo_sentinel/.env
+# Start in paper mode. Change paper to live only after the deployment checks in README.
+ExecStart=/home/ubuntu/roostoo_sentinel/.venv/bin/python -m sentinel run --mode paper
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=20
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
