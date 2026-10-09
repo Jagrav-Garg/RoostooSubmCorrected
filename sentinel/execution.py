@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import asdict
+import math
 
 from .api import AmbiguousWrite, ApiError, Roostoo, decimal_string
 from .config import Config
@@ -18,7 +19,7 @@ def wallet_qty(wallet: dict, pair: str) -> float:
 def validated_quote(ticker: dict, pair: str) -> tuple[float, float]:
     x = ticker.get("Data", {}).get(pair, {})
     bid, ask = float(x.get("MaxBid", 0)), float(x.get("MinAsk", 0))
-    if not 0 < bid <= ask:
+    if not (math.isfinite(bid) and math.isfinite(ask) and 0 < bid <= ask):
         raise ApiError(f"Invalid bid/ask for {pair}")
     return bid, ask
 

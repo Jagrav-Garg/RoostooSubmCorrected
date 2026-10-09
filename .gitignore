@@ -9,3 +9,4 @@ research/raw/
 *.lock
 tmp/
 *.egg-info/
+PACKAGE_MANIFEST.json

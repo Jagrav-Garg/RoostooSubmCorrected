@@ -44,11 +44,19 @@ def main():
     tick.add_argument("--tick-config", default="tick_config.json")
     tick.add_argument("--mode", choices=["shadow", "paper-exchange"], default="shadow")
     tick.add_argument("--once", action="store_true")
+    status = sub.add_parser("tick-status", help="read-only tick-ledger and optional signed account diagnosis")
+    status.add_argument("--tick-config", default="tick_config.json")
+    status.add_argument("--mode", choices=["shadow", "paper-exchange"], default="paper-exchange")
+    status.add_argument("--remote", action="store_true", help="read balances/orders/quotes; never submit or cancel")
+    status.add_argument("--output", help="optional folder for summary.txt, trade_logs.csv and status.json")
     args = ap.parse_args()
-    c = None if args.command == "tick-run" else Config.load(args.config)
+    c = None if args.command in {"tick-run","tick-status"} else Config.load(args.config)
     if args.command == "tick-run":
         from .tick import run_tick
         run_tick(args.tick_config,args.mode,args.once)
+    elif args.command == "tick-status":
+        from .tick_report import diagnose
+        print(json.dumps(diagnose(args.tick_config,args.mode,args.remote,args.output),indent=2,allow_nan=False))
     elif args.command == "download":
         download_history(c.pairs, args.start, args.end, c.data_dir, args.workers)
     elif args.command == "collect":

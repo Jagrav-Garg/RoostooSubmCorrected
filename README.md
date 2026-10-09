@@ -2,13 +2,15 @@
 
 A selective, cost-aware trading research package and Roostoo execution bot for the October 2026 competition. Original implementation; the supplied GitHub repository was studied for architecture, not copied.
 
+**Execution correction:** the default tick entry now joins the best bid, rather than bidding an extra tick below it. Unfilled entries expire after ten minutes. See [FILL_CORRECTIONS.md](FILL_CORRECTIONS.md) for diagnosis, new reports and how to update a running installation without losing its ledger. Historical research files describe the original simulations; they are not validated account returns for this corrected execution policy.
+
 **Status: research candidate with a new, fill-sensitive PEPE limit strategy.** The tick hypothesis produced positive simulated returns under touch fills, but failed trade-through stress. Actual Roostoo matching remains unverified. Read [TICK_STRATEGY_RESEARCH.md](TICK_STRATEGY_RESEARCH.md) first. The original hourly configuration remains separate and did not establish profitability or activity compliance.
 
 Read [STRATEGY_RESEARCH.md](STRATEGY_RESEARCH.md) for evidence, results, applicable rules, unresolved details and instrument selection.
 
 ## New sequential tick candidate
 
-The user clarified that sequential tick scalping is permitted. `tick_config.json` enables PEPE only, buys one tick below the actual bid, then submits a fee-aware sell limit above the filled entry. It uses one position and one resting order, starts at $100 per entry, and scales only after at least twenty positive-economics observations on that account. The research report explains the difference between trade-price simulations and executable quote matching. Shadow observations never count as real mock-exchange fills.
+The user clarified that sequential tick scalping is permitted. `tick_config.json` enables PEPE only, buys at the actual best bid while keeping its price below the ask, then submits a fee-aware sell limit above the filled entry. It uses one position and one resting order, starts at $100 per entry, and scales only after at least twenty completed cycles with positive net execution checks under the current configuration. The research report explains the difference between trade-price simulations and executable quote matching. Shadow observations never count as real mock-exchange fills.
 
 ```bash
 python -m sentinel tick-run --mode shadow --once
@@ -22,6 +24,14 @@ python -m sentinel tick-run --mode paper-exchange
 ```
 
 Use `deploy/roostoo-tick.service` for this alternative. Do not run both services. Preserve `runtime/tick_paper_exchange.sqlite3`, examine actual maker roles/fees and net probe results, and keep the authenticated operation under supervision until matching and cancellation are verified. No authenticated order was placed while preparing this package. The full-size simulated results do not include the initial small-order stage.
+
+Read-only diagnosis with the same private environment variables:
+
+```bash
+python -m sentinel tick-status --mode paper-exchange --remote --output runtime/diagnostics
+```
+
+The running tick bot updates `runtime/reports/paper-exchange/summary.txt`, `trade_logs.csv`, and `status.json` approximately every minute. Shadow reports go to `runtime/reports/shadow/`. Confirmed order records and closed cycles are counted separately from attempted entries. `tick_order_rejected` includes the redacted exchange error; `tick_order_status` shows pending prices and quote distances; `tick_decision` explains every idle gate. Export files stay on the machine; no external messaging is configured.
 
 Reproduce the new analysis with `python research/download_limit_data.py`, `python research/evaluate_tick_cycles.py`, and `python research/validate_tick_candidate.py`. These use the included compressed minute candles and archive checksums. The download dates are explicit research endpoints, not rolling current-date defaults.
 
@@ -38,6 +48,8 @@ Reproduce the new analysis with `python research/download_limit_data.py`, `pytho
 | `sentinel/state.py` | Durable SQLite state, fill journal, configuration/commit audit events |
 | `sentinel/risk.py` | Risk sizing, correlated exposure caps, stop/target/time exits and portfolio loss limits |
 | `sentinel/runner.py` | Continuous monitoring, background data refresh, single-instance lock, activity reports |
+| `sentinel/tick.py` | Sequential best-bid limit execution, fee reconciliation and explicit decision diagnostics |
+| `sentinel/tick_report.py` | Read-only account diagnosis and periodic summary/trade exports |
 | `deploy/roostoo-sentinel.service` | EC2 systemd example, initially in paper mode |
 | `tests/` | Critical behavior tests, including timeout/restart and label leakage cases |
 | `research/` | Actual development failures, retrospective results, benchmarks and test output |
@@ -103,7 +115,7 @@ The initial whitelist is BTC, ETH, BNB, SOL, XRP, LINK, AVAX, AAVE, SUI and LTC 
 
 The slower swing strategy uses 2.5 times hourly ATR as its volatility unit and evaluates entry opportunities every six hours. It is implemented but not enabled in `config.json`; its tests did not support recommending it. Optional short support is also disabled by default. Enabling it requires both competition permission and verified collateral accounting. A spot SELL never opens a short.
 
-Published competition market fees are modeled conservatively, with an additional five basis points of friction per leg. Market orders are used for a transparent execution benchmark. This version does not rest limit orders and does not assume every limit order earns a maker fee or fills profitably. No market-making, arbitrage or high-frequency trading module is included.
+The original hourly runner models market fees with an additional five basis points of friction per leg and uses market orders as its execution benchmark. The separate tick runner rests sequential limits and verifies the actual role and commission before allowing more entries. Neither runner assumes a profitable or guaranteed fill. No unrestricted two-sided quoting, latency arbitrage or high-frequency module is included.
 
 Planned loss limits are not hard guarantees. Client-managed stops can miss a price during an outage or a gap. A network timeout leaves the exchange write status unknown. The bot pauses further writes, persists the intent and reconciles account state/order history instead of blindly retrying. An unresolved write can also delay exits. An ambiguous result that cannot be matched uniquely requires investigation of read-only history and the journal; restarting or deleting the database does not resolve it.
 
