@@ -60,6 +60,7 @@ class Config:
     required_active_days: int = 8
     minimum_daily_filled_orders: int = 1  # provisional lower bound, NOT organizer confirmation
     minimum_order_notional: float = 10.
+    max_trading_capital: float = 10000.  # Hard ceiling: bot never risks/allocates more than 10k USD
 
     @classmethod
     def load(cls, path: str | Path = "config.json") -> "Config":
@@ -98,6 +99,8 @@ class Config:
             raise ValueError("Stop and target distances must be positive")
         if not 0 < self.daily_loss_limit <= self.max_drawdown < 1:
             raise ValueError("Invalid loss limits")
+        if not 0 < self.max_trading_capital <= self.initial_equity:
+            raise ValueError("max_trading_capital must be positive and <= initial_equity")
 
     @property
     def fingerprint(self) -> str:

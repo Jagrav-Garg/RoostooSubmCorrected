@@ -36,7 +36,8 @@ class TickConfig:
     max_entry_attempts_per_day: int = 48
     rejection_backoff_seconds: int = 300
     report_interval_seconds: int = 60
-    allocation_cap: float = .15
+    allocation_cap: float = .10
+    max_trading_capital: float = 10000.
     planned_risk: float = .0015
     daily_loss: float = .0075
     max_drawdown: float = .025
@@ -207,6 +208,9 @@ class TickEngine:
         px=decimal_string(price,int(m['PricePrecision']))
         if not math.isfinite(float(qty)) or not math.isfinite(float(px)) or float(qty)<=0 or float(px)<=0 or float(qty)*float(px)<=max(float(m['MiniOrder']),self.c.minimum_notional):
             self.decision(now,'order_below_minimum_notional',pair=s['pair'],side=side,quantity=qty,price=px)
+            return False
+        if side=='BUY' and float(qty)*float(px)>getattr(self.c,'max_trading_capital',10000.)+1e-4:
+            self.decision(now,'exceeds_max_trading_capital',pair=s['pair'])
             return False
         w=self.wallet()
         if side=='BUY' and float(qty)*float(px)*(1+self.c.maker_fee)>float(w.get('USD',{}).get('Free',0))+1e-8:
@@ -458,7 +462,7 @@ class TickEngine:
             if recent_return<-.003 or float(q['LastPrice'])<sum(recent)/len(recent)-2*tick:
                 skips.append({**detail,'reason':'falling_price_filter','recent_return':recent_return});continue
             loss=(self.c.stop_ticks+1)*tick/entry+self.c.maker_fee+self.c.taker_fee
-            notional=min(equity*self.c.allocation_cap,equity*self.c.planned_risk/loss,free_cash/(1+self.c.maker_fee))
+            notional=min(equity*self.c.allocation_cap,equity*self.c.planned_risk/loss,free_cash/(1+self.c.maker_fee),getattr(self.c,'max_trading_capital',10000.))
             if not self.probe_verified(pair):notional=min(notional,self.c.probe_notional)
             candidates.append((edge,pair,entry,notional))
         if candidates:

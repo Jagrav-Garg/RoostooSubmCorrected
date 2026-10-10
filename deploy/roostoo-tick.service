@@ -7,11 +7,12 @@ StartLimitBurst=5
 
 [Service]
 Type=simple
+# User can be 'ubuntu' (Ubuntu AMI) or 'ec2-user' (Amazon Linux 2023 AMI)
 User=ubuntu
 WorkingDirectory=/home/ubuntu/roostoo_sentinel
 EnvironmentFile=/home/ubuntu/roostoo_sentinel/.env
-# Start in shadow mode. Use paper-exchange for the small-order verification stage.
-ExecStart=/home/ubuntu/roostoo_sentinel/.venv/bin/python -m sentinel tick-run --mode shadow
+# Use --mode paper-exchange for live mock exchange trading; --mode shadow for simulation
+ExecStart=/home/ubuntu/roostoo_sentinel/.venv/bin/python -m sentinel tick-run --mode paper-exchange
 Restart=on-failure
 RestartSec=30
 TimeoutStopSec=20

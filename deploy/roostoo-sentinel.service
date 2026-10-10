@@ -7,11 +7,12 @@ StartLimitBurst=5
 
 [Service]
 Type=simple
+# User can be 'ubuntu' (Ubuntu AMI) or 'ec2-user' (Amazon Linux 2023 AMI)
 User=ubuntu
 WorkingDirectory=/home/ubuntu/roostoo_sentinel
 EnvironmentFile=/home/ubuntu/roostoo_sentinel/.env
-# Start in paper mode. Change paper to live only after the deployment checks in README.
-ExecStart=/home/ubuntu/roostoo_sentinel/.venv/bin/python -m sentinel run --mode paper
+# Use --mode live for live trading; --mode paper for simulated trading
+ExecStart=/home/ubuntu/roostoo_sentinel/.venv/bin/python -m sentinel run --mode live
 Restart=on-failure
 RestartSec=30
 TimeoutStopSec=20

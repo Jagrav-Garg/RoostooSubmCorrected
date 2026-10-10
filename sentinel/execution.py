@@ -105,6 +105,11 @@ class Executor:
     def open(self, s: Signal, notional: float, ticker: dict, wallet: dict, now: int) -> bool:
         if self.store.unfinished():
             return False
+        # Hard ceiling: total position notional must never exceed max_trading_capital ($10,000 USD)
+        current_gross = sum(p.notional for p in self.store.positions())
+        max_capital = getattr(self.cfg, "max_trading_capital", 10000.)
+        if current_gross + notional > max_capital + 1e-4:
+            return False
         bid, ask = validated_quote(ticker, s.pair)
         entry = ask if s.direction == 1 else bid
         meta = self.meta["TradePairs"][s.pair]

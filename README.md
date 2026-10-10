@@ -101,9 +101,10 @@ The initial whitelist is BTC, ETH, BNB, SOL, XRP, LINK, AVAX, AAVE, SUI and LTC 
 |---|---:|
 | Planned risk per entry, including modeled costs | 0.15% of equity |
 | Aggregate planned stop risk | 0.45% |
-| Maximum gross allocation | 50% |
-| Maximum single-asset allocation | 20% |
-| Same-direction correlated group cap | 30% |
+| Maximum gross allocation | 10% (Hard cap: $10,000 max trading capital) |
+| Maximum single-asset allocation | 5% ($5,000) |
+| Hard trading capital ceiling | $10,000 USD (strictly enforced; 90% stays in cash) |
+| Same-direction correlated group cap | 10% ($10,000) |
 | Maximum concurrent positions | 3 |
 | Maximum new entries per HKT day | 4 |
 | Daily equity loss halt | 0.75% |
@@ -119,29 +120,54 @@ The original hourly runner models market fees with an additional five basis poin
 
 Planned loss limits are not hard guarantees. Client-managed stops can miss a price during an outage or a gap. A network timeout leaves the exchange write status unknown. The bot pauses further writes, persists the intent and reconciles account state/order history instead of blindly retrying. An unresolved write can also delay exits. An ambiguous result that cannot be matched uniquely requires investigation of read-only history and the journal; restarting or deleting the database does not resolve it.
 
-## EC2 deployment example
+## AWS Deployment Guide (Hackathon Official Procedure)
 
-Use the organizer's supplied account and current account-specific guide. The linked Notion/Pitch pages could not be retrieved during this research; this is a generic EC2/systemd recipe, not a verified substitute for those account instructions.
+Per the Hackathon AWS Guide, the competition runs on an EC2 instance in **`ap-southeast-2` (Sydney)**:
 
-1. Place this directory at `/home/ubuntu/roostoo_sentinel` on an Ubuntu EC2 instance with a supported Python version and sufficient outbound access to the public data and Roostoo endpoints.
-2. Create the virtual environment and install dependencies as above.
-3. Copy `.env.example` to `.env`, enter the two keys privately on EC2, and run `chmod 600 .env`. No real credential is included in this package. Do not add `.env` to Git.
-4. The service reads `.env` through `EnvironmentFile`. For direct CLI authenticated checks, export the variables privately in the shell; the CLI does not automatically parse `.env`.
-5. Run the authenticated read-only preflight and remote activity audit. Inspect balances, existing holdings, pending orders, current fee records and short access. Do not run a new live instance over the old bot or discard its position state.
-6. Start the service in paper mode and inspect the journal. Historical tests here do not justify live activation; establish a strategy that passes your validation and confirm the open activity/cutoff questions first.
-
-```bash
-python -m sentinel preflight --authenticated
-python -m sentinel audit --remote --output runtime/remote_activity.json
-sudo cp deploy/roostoo-sentinel.service /etc/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl enable --now roostoo-sentinel
-journalctl -u roostoo-sentinel -f
-```
-
-When a justified live configuration is ready, change `--mode paper` to `--mode live` in the service and restart it. Preserve `runtime/live.sqlite3` on every redeployment. The sample account user/path must be adjusted for a different AMI username. Keep the competition clock and initial-equity reference accurate for your account. The configured HKT midnight cutoff is provisional; exact scoring cutoff was not published in the retrieved event description.
-
-Stopping the service does not flatten exchange holdings. The continuous runner initiates exits near the configured cutoff, but an outage can prevent them. Monitor service health, reconciliation warnings, exposure and activity.
+1. **Launch Instance in AWS Console:**
+   - Region: `ap-southeast-2` (Sydney).
+   - Launch Template: `Hackathon-Starter-Template` (`t3.medium`, proceed without a key pair).
+   - Storage: Default EBS (30 GB limit). Launch only **one** instance.
+2. **Connect via AWS Session Manager:**
+   - In EC2 Instances, select your instance -> Click **Connect** -> **Session Manager** tab -> Click **Connect**.
+3. **Setup and Clone:**
+   ```bash
+   cd ~
+   git clone <your-bot-repo>
+   cd roostoo_sentinel
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+4. **Configure API Keys:**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your assigned API Key and Secret
+   chmod 600 .env
+   export ROOSTOO_API_KEY="your-api-key"
+   export ROOSTOO_SECRET_KEY="your-secret-key"
+   ```
+5. **Run Inside TMUX (Keeps running after browser disconnect):**
+   ```bash
+   sudo dnf install -y tmux
+   tmux new -s trading-bot
+   
+   # Run the launcher script or command:
+   ./start_bot.sh tick paper-exchange
+   
+   # Detach from TMUX: Press Ctrl+B, then D
+   ```
+   To reattach to the running session later:
+   ```bash
+   tmux attach -t trading-bot
+   ```
+6. **Systemd Alternative (Optional):**
+   ```bash
+   sudo cp deploy/roostoo-tick.service /etc/systemd/system/
+   sudo systemctl daemon-reload
+   sudo systemctl enable --now roostoo-tick
+   journalctl -u roostoo-tick -f
+   ```
 
 ## Honest activity auditing
 

@@ -37,7 +37,7 @@ class Roostoo:
     def __init__(self, base_url="https://mock-api.roostoo.com", spacing=2., api_key=None, secret=None):
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key if api_key is not None else os.getenv("ROOSTOO_API_KEY", "")
-        self.secret = secret if secret is not None else os.getenv("ROOSTOO_SECRET_KEY", "")
+        self.secret = secret if secret is not None else (os.getenv("ROOSTOO_SECRET_KEY") or os.getenv("ROOSTOO_API_SECRET", ""))
         self.spacing = spacing
         self.next_request = 0.
         self.offset_ms = 0
@@ -116,13 +116,21 @@ class Roostoo:
         return self._request("GET", "/v3/ticker")
 
     def balance(self):
-        return self._request("GET", "/v3/balance", signed=True)["Wallet"]
+        resp = self._request("GET", "/v3/balance", signed=True)
+        # The API may return "Wallet" (docs) or "SpotWallet" (actual). Handle both.
+        return resp.get("Wallet") or resp.get("SpotWallet", {})
 
     def short_positions(self):
         return self._request("GET", "/v6/short_positions", signed=True).get("Positions", [])
 
     def query_orders(self, order_id=None, limit=100, offset=0, pending_only=False):
-        params = {"order_id": str(order_id)} if order_id is not None else {"limit": str(limit), "offset": str(offset), "pending_only": "TRUE" if pending_only else "FALSE"}
+        if order_id is not None:
+            params = {"order_id": str(order_id)}
+        else:
+            params = {"limit": str(limit), "pending_only": "TRUE" if pending_only else "FALSE"}
+            # Only include offset when non-zero; the API rejects offset=0.
+            if offset:
+                params["offset"] = str(offset)
         return self._request("POST", "/v3/query_order", params, signed=True).get("OrderMatched", [])
 
     def place(self, pair: str, side: str, quantity: str):

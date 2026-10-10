@@ -70,11 +70,13 @@ def allocation(signal: Signal, entry: float, equity: float, cash: float, positio
     exposure = {p.pair: p.quantity * max(p.entry, marks.get(p.pair, p.entry)) for p in positions}
     gross = sum(exposure.values())
     used_risk = sum(p.planned_loss(cfg) for p in positions)
+    max_capital = getattr(cfg, "max_trading_capital", 10000.)
     cap = min(
         equity * cfg.risk_per_trade * risk_scale / risk_per_dollar,
         max(0., equity * cfg.max_open_risk * risk_scale - used_risk) / risk_per_dollar,
         equity * cfg.max_position_weight,
         max(0., equity * cfg.max_gross_weight - gross),
+        max(0., max_capital - gross),
         max(0., cash) / (1 + cfg.fee_per_side + cfg.friction_bps_per_side / 10000),
         signal.quote_volume_24h * cfg.max_volume_participation,
     )

@@ -35,18 +35,19 @@ class InstanceLock:
         path.parent.mkdir(parents=True, exist_ok=True)
         self.file = path.open("a+b")
         try:
-            import fcntl
-            fcntl.flock(self.file, fcntl.LOCK_EX | fcntl.LOCK_NB)
-            self.kind = "posix"
-        except ImportError:
-            import msvcrt
-            self.file.seek(0)
-            self.file.write(b"0")
-            self.file.flush()
-            self.file.seek(0)
-            msvcrt.locking(self.file.fileno(), msvcrt.LK_NBLCK, 1)
-            self.kind = "windows"
-        except OSError:
+            try:
+                import fcntl
+                fcntl.flock(self.file, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                self.kind = "posix"
+            except ImportError:
+                import msvcrt
+                self.file.seek(0)
+                self.file.write(b"0")
+                self.file.flush()
+                self.file.seek(0)
+                msvcrt.locking(self.file.fileno(), msvcrt.LK_NBLCK, 1)
+                self.kind = "windows"
+        except (OSError, PermissionError):
             self.file.close()
             raise RuntimeError("Another bot owns this state directory; never run concurrent instances") from None
 
